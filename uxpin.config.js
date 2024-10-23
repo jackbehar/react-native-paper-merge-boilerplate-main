@@ -2,15 +2,16 @@ module.exports = {
   components: {
     categories: [
       {
-        name: 'Test',
+        name: "Test",
         include: [
-          'src/components/Button/Button.tsx',
-          'src/components/TextInput/TextInput.tsx',
+          "src/components/Button/Button.tsx",
+          "src/components/TextInput/TextInput.tsx",
+          "src/components/ThemeCustomizer/ThemeCustomizer.js",
         ],
       },
     ],
-    webpackConfig: 'webpack.config.js',
-    wrapper: 'src/components/UXPinWrapper.tsx',
+    webpackConfig: "webpack.config.js",
+    wrapper: "src/components/UXPinWrapper/UXPinWrapper.js",
   },
-  name: 'React-Bootstrap-UXPin-Merge',
-}
+  name: "React-Bootstrap-UXPin-Merge",
+};

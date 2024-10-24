@@ -3,17 +3,7 @@
 import React from "react";
 import defaultTheme from "./boilerplate-theme";
 
-import { MD2DarkTheme, PaperProvider, useTheme } from "react-native-paper";
-
-// const defaultTheme = {
-//   ...MD2DarkTheme,
-
-//   // Specify a custom nested property
-//   colors: {
-//     ...MD2DarkTheme.colors,
-//     primary: "#ff0000",
-//   },
-// };
+import { PaperProvider } from "react-native-paper";
 
 export const ThemeContext = React.createContext({});
 const completeDefaultTheme = defaultTheme;

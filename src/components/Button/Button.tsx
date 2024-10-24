@@ -1,15 +1,22 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import { Button as PaperButton, } from "react-native-paper";
-import { ReactNode, RefObject } from 'react';
-import { GestureResponderEvent, StyleProp, ViewStyle, TextStyle, ColorValue, Animated, View, AccessibilityRole } from 'react-native';
-import { IconSource } from 'react-native-paper/lib/typescript/components/Icon';
-import { PressableAndroidRippleConfig } from 'react-native';
-import { ThemeProp } from 'react-native-paper/lib/typescript/types';
 
-export const Button: React.FC<ButtonProps> = (props) => {
-    return <PaperButton {...props} />;
-};
+/**
+ * @uxpindocurl https://callstack.github.io/react-native-paper/docs/components/Button/
+ * @uxpindescription A button is component that the user can press to trigger an action.
+ */
+
+export const Button = (props: ButtonProps) => (
+    <PaperButton {...props} />
+);
+
 export interface ButtonProps {
+    /**
+    * Label text for the button.
+     * @uxpinpropname label
+    */
+    children: ReactNode;
+
     /**
      * Mode of the button. Determines the visual style.
      */
@@ -28,23 +35,27 @@ export interface ButtonProps {
     /**
      * @deprecated Deprecated in v5.x - use `buttonColor` or `textColor` instead.
      * Custom text or background color.
+     * @uxpinignoreprop
      */
     color?: string;
 
     /**
      * Custom background color for the button.
+     * @uxpincontroltype color
      */
     buttonColor?: string;
 
     /**
      * Custom text color for the button.
+     * @uxpincontroltype color
      */
     textColor?: string;
 
     /**
      * Color for the ripple effect (Android).
+     * @uxpincontroltype color
      */
-    rippleColor?: ColorValue;
+    rippleColor?: string;
 
     /**
      * Displays a loading indicator inside the button.
@@ -54,17 +65,12 @@ export interface ButtonProps {
     /**
      * Icon to display alongside the button text.
      */
-    icon?: IconSource;
+    icon?: string;
 
     /**
      * Disables the button, making it unpressable.
      */
     disabled?: boolean;
-
-    /**
-     * Label text for the button.
-     */
-    children: ReactNode;
 
     /**
      * Converts the button text to uppercase.
@@ -74,7 +80,7 @@ export interface ButtonProps {
     /**
      * Configures the ripple background effect on Android.
      */
-    background?: PressableAndroidRippleConfig;
+    background?: object;
 
     /**
      * Accessibility label for screen readers.
@@ -89,27 +95,56 @@ export interface ButtonProps {
     /**
      * Accessibility role of the button, defaults to "button".
      */
-    accessibilityRole?: AccessibilityRole;
+    accessibilityRole?: 'none'
+    | 'button'
+    | 'togglebutton'
+    | 'link'
+    | 'search'
+    | 'image'
+    | 'keyboardkey'
+    | 'text'
+    | 'adjustable'
+    | 'imagebutton'
+    | 'header'
+    | 'summary'
+    | 'alert'
+    | 'checkbox'
+    | 'combobox'
+    | 'menu'
+    | 'menubar'
+    | 'menuitem'
+    | 'progressbar'
+    | 'radio'
+    | 'radiogroup'
+    | 'scrollbar'
+    | 'spinbutton'
+    | 'switch'
+    | 'tab'
+    | 'tabbar'
+    | 'tablist'
+    | 'timer'
+    | 'list'
+    | 'toolbar';
 
     /**
      * Function to execute on press.
      */
-    onPress?: (e: GestureResponderEvent) => void;
+    onPress?: () => void;
 
     /**
      * Function to execute when the button is pressed in.
      */
-    onPressIn?: (e: GestureResponderEvent) => void;
+    onPressIn?: () => void;
 
     /**
      * Function to execute when the button is pressed out.
      */
-    onPressOut?: (e: GestureResponderEvent) => void;
+    onPressOut?: () => void;
 
     /**
      * Function to execute on long press.
      */
-    onLongPress?: (e: GestureResponderEvent) => void;
+    onLongPress?: () => void;
 
     /**
      * Delay for triggering the long press event, in milliseconds.
@@ -119,7 +154,7 @@ export interface ButtonProps {
     /**
      * Custom style for the button's inner content.
      */
-    contentStyle?: StyleProp<ViewStyle>;
+    contentStyle?: object;
 
     /**
      * Specifies the largest font size multiplier allowed.
@@ -128,23 +163,25 @@ export interface ButtonProps {
 
     /**
      * Custom style for the button's container.
+     * @uxpincontroltype css
      */
-    style?: Animated.WithAnimatedValue<StyleProp<ViewStyle>>;
+    style?: object;
 
     /**
      * Custom style for the button's text.
+     * @uxpincontroltype css
      */
-    labelStyle?: StyleProp<TextStyle>;
+    labelStyle?: object;
 
     /**
      * Optional theme override for the button.
      */
-    theme?: ThemeProp;
+    theme?: object;
 
     /**
      * Ref for the button's touchable component.
      */
-    touchableRef?: RefObject<View>;
+    touchableRef?: object;
 
     /**
      * Test ID used for end-to-end testing.
@@ -153,8 +190,6 @@ export interface ButtonProps {
 }
 
 
-// Define a new interface that omits both HTML and React Native-specific props from ButtonProps
-// interface CleanButtonProps extends Omit<ButtonProps, CommonHTMLProps | CommonReactNativeProps> { }
 
 
 

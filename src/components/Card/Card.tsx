@@ -1,12 +1,15 @@
 import React, { ReactNode } from "react";
 import { Card as PaperCard, } from "react-native-paper";
 import { Title } from "./Title/Title";
+import { Content } from "./Content/Content";
 
 
 export const Card = (props: CardProps) => (
     <PaperCard {...props} />);
 
 Card.Title = Title;
+Card.Content = Content;
+
 
 export interface CardProps {
     /**

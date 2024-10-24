@@ -14,6 +14,7 @@ module.exports = {
         include: [
           "src/components/Card/Card.tsx",
           "src/components/Card/Title/Title.tsx",
+          "src/components/Card/Content/Content.tsx",
         ],
       },
     ],

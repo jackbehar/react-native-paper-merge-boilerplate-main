@@ -1,14 +1,22 @@
 import React, { ReactNode } from "react";
-import { Card as PaperCard, } from "react-native-paper";
+import { Card as PaperCard, Text, Avatar, Button } from "react-native-paper";
 import { Title } from "./Title/Title";
 import { Content } from "./Content/Content";
+import { Actions } from "./Actions/Actions"
+import { Cover } from "./Cover/Cover";
 
-
+/**
+ * @uxpindocurl https://callstack.github.io/react-native-paper/docs/components/Card/
+ * @uxpindescription A card is a sheet of material that serves as an entry point to more detailed information.
+*/
 export const Card = (props: CardProps) => (
-    <PaperCard {...props} />);
+    <PaperCard {...props} />
+);
 
+Card.Actions = Actions;
 Card.Title = Title;
 Card.Content = Content;
+Card.Cover = Cover;
 
 
 export interface CardProps {
@@ -25,8 +33,6 @@ export interface CardProps {
 
     /**
      * Content of the Card.
-     * 
-     * This is required.
      */
     children: ReactNode
 
@@ -90,3 +96,4 @@ export interface CardProps {
     accessible?: boolean;
 }
 
+// export default Card

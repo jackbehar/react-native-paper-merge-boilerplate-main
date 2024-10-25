@@ -15,6 +15,8 @@ module.exports = {
           "src/components/Card/Card.tsx",
           "src/components/Card/Title/Title.tsx",
           "src/components/Card/Content/Content.tsx",
+          "src/components/Card/Actions/Actions.tsx",
+          "src/components/Card/Cover/Cover.tsx",
         ],
       },
     ],

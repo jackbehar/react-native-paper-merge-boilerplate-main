@@ -39,27 +39,27 @@ const setThemeOptions = (callback) => {
 
 export default function UXPinWrapper(props) {
   //Link Google fonts
-  if (!document.getElementById("fluent-merge-font-DmSans")) {
-    let DmSans = document.createElement("link");
-    DmSans.setAttribute(
-      "href",
-      "https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
-    );
-    DmSans.setAttribute("rel", "stylesheet");
-    DmSans.setAttribute("id", "fluent-merge-font-DmSans");
-    document.head.appendChild(DmSans);
-  }
+  // if (!document.getElementById("fluent-merge-font-DmSans")) {
+  //   let DmSans = document.createElement("link");
+  //   DmSans.setAttribute(
+  //     "href",
+  //     "https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+  //   );
+  //   DmSans.setAttribute("rel", "stylesheet");
+  //   DmSans.setAttribute("id", "fluent-merge-font-DmSans");
+  //   document.head.appendChild(DmSans);
+  // }
 
-  if (!document.getElementById("fluent-merge-font-SpaceGrotesk")) {
-    let SpaceGrotesk = document.createElement("link");
-    SpaceGrotesk.setAttribute(
-      "href",
-      "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
-    );
-    SpaceGrotesk.setAttribute("rel", "stylesheet");
-    SpaceGrotesk.setAttribute("id", "fluent-merge-font-SpaceGrotesk");
-    document.head.appendChild(SpaceGrotesk);
-  }
+  // if (!document.getElementById("fluent-merge-font-SpaceGrotesk")) {
+  //   let SpaceGrotesk = document.createElement("link");
+  //   SpaceGrotesk.setAttribute(
+  //     "href",
+  //     "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+  //   );
+  //   SpaceGrotesk.setAttribute("rel", "stylesheet");
+  //   SpaceGrotesk.setAttribute("id", "fluent-merge-font-SpaceGrotesk");
+  //   document.head.appendChild(SpaceGrotesk);
+  // }
 
   const [theme, setTheme] = React.useState(themeOptions);
 

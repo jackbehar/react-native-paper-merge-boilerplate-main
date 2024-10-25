@@ -12,7 +12,7 @@
   "dependencies": {
     "@types/react": "^18.3.11",
     "@types/react-dom": "^18.3.1",
-    "@uxpin/merge-cli": "^3.4.6",
+    "@uxpin/merge-cli": "3.4.7",
     "babel-plugin-react-native-web": "^0.19.13",
     "expo-dev-menu": "^5.0.22",
     "metro-react-native-babel-preset": "^0.77.0",

@@ -1,8 +1,8 @@
 import React, { ReactNode } from "react";
 import { Card as PaperCard } from "react-native-paper";
 /**
- * @uxpindocurl https://callstack.github.io/react-native-paper/docs/components/Card/
- * @uxpindescription A card is a sheet of material that serves as an entry point to more detailed information.
+ * @uxpindocurl https://callstack.github.io/react-native-paper/docs/components/Card/CardActions
+ * @uxpindescription A component to show a list of actions inside a Card.
  * @uxpinnamespace Card
 */
 export const Actions = (props: CardActionsProps) => (

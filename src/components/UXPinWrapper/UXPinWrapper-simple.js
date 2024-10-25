@@ -1,7 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-// import { theme } from "./boilerplate-theme";
-import { MD2DarkTheme, PaperProvider, useTheme } from "react-native-paper";
+import { MD2DarkTheme, PaperProvider } from "react-native-paper";
 
 const theme = {
   ...MD2DarkTheme,

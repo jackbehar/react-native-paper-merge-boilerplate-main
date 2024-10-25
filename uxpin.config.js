@@ -2,11 +2,10 @@ module.exports = {
   components: {
     categories: [
       {
-        name: "Test",
+        name: "Inputs",
         include: [
           "src/components/Button/Button.tsx",
           "src/components/TextInput/TextInput.tsx",
-          "src/components/ThemeCustomizer/ThemeCustomizer.js",
         ],
       },
       {
@@ -18,6 +17,10 @@ module.exports = {
           "src/components/Card/Actions/Actions.tsx",
           "src/components/Card/Cover/Cover.tsx",
         ],
+      },
+      {
+        name: "Utilities",
+        include: ["src/components/ThemeCustomizer/ThemeCustomizer.js"],
       },
     ],
     webpackConfig: "webpack.config.js",

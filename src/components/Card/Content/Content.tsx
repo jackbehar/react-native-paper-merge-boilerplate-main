@@ -1,8 +1,8 @@
 import React, { ReactNode } from "react";
 import { Card as PaperCard, } from "react-native-paper";
 /**
- * @uxpindocurl https://ant.design/components/Card/
- * @uxpindescription Grid cards as children of Card. Must be a child of Card.
+ * @uxpindocurl https://callstack.github.io/react-native-paper/docs/components/Card/CardContent
+ * @uxpindescription A component to show content inside a Card.
  * @uxpinnamespace Card
 */
 export const Content = (props: CardContentProps) => (

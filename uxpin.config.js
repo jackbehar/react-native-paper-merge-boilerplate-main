@@ -2,6 +2,13 @@ module.exports = {
   components: {
     categories: [
       {
+        name: "react native paper",
+        include: [
+          "src/components/ActivityIndicator/ActivityIndicator.jsx",
+          "src/components/Badge/Badge.jsx",
+        ],
+      },
+      {
         name: "Inputs",
         include: [
           "src/components/Button/Button.tsx",

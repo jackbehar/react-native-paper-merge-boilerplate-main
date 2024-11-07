@@ -41,19 +41,22 @@ export interface ButtonProps {
 
     /**
      * Custom background color for the button.
-     * @uxpincontroltype color
+    
+* @uxpincontroltype color
      */
     buttonColor?: string;
 
     /**
      * Custom text color for the button.
-     * @uxpincontroltype color
+    
+* @uxpincontroltype color
      */
     textColor?: string;
 
     /**
      * Color for the ripple effect (Android).
-     * @uxpincontroltype color
+    
+* @uxpincontroltype color
      */
     rippleColor?: string;
 

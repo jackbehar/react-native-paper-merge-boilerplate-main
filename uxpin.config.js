@@ -6,6 +6,15 @@ module.exports = {
         include: [
           "src/components/ActivityIndicator/ActivityIndicator.jsx",
           "src/components/Badge/Badge.jsx",
+          "src/components/Chip/Chip.jsx",
+          "src/components/Divider/Divider.jsx",
+          "src/components/HelperText/HelperText.jsx",
+          "src/components/IconButton/IconButton.jsx",
+          "src/components/Icon/Icon.jsx",
+          "src/components/Modal/Modal.jsx",
+          "src/components/Portal/Portal.jsx",
+          "src/components/Searchbar/Searchbar.jsx",
+          "src/components/ProgressBar/ProgressBar.jsx",
         ],
       },
       {

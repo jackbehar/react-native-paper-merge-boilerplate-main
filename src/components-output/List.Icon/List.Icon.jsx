@@ -32,7 +32,9 @@ List.Icon.propTypes = {
   children: PropTypes.node,
 /** Icon to show. */
   icon: PropTypes.oneOf([PropTypes.oneOf([PropTypes.string, PropTypes.object]), PropTypes.object, PropTypes.object]),
-  /** Color for the icon. */
+  /** Color for the icon.
+* @uxpincontroltype color
+*/
   color: PropTypes.string,
   style: PropTypes.object,
   /** @optional */

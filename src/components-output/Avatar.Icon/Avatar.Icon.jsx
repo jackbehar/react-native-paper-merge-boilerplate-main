@@ -28,7 +28,9 @@ Avatar.Icon.propTypes = {
   icon: PropTypes.oneOf([PropTypes.oneOf([PropTypes.string, PropTypes.object]), PropTypes.object, PropTypes.object]),
   /** Size of the avatar. */
   size: PropTypes.number,
-  /** Custom color for the icon. */
+  /** Custom color for the icon.
+* @uxpincontroltype color
+*/
   color: PropTypes.string,
   style: PropTypes.object,
   /** @optional */

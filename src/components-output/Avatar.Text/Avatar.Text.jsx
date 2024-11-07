@@ -28,7 +28,9 @@ Avatar.Text.propTypes = {
   label: PropTypes.string,
   /** Size of the avatar. */
   size: PropTypes.number,
-  /** Custom color for the text. */
+  /** Custom color for the text.
+* @uxpincontroltype color
+*/
   color: PropTypes.string,
   /** Style for text container */
   style: PropTypes.object,

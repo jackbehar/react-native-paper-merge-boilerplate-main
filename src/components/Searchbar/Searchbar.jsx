@@ -1,41 +1,40 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Searchbar as SearchbarM } from 'react-native-paper';
+import React from "react";
+import PropTypes from "prop-types";
+import { Searchbar as SearchbarM } from "react-native-paper";
 
 /**
-* @uxpindocurl https://callstack.github.io/react-native-paper/docs/components/Searchbar
-* @uxpindescription Searchbar is a simple input box where users can type search queries.
-* 
-* ## Usage
-* ```js
-* import * as React from 'react';
-* import { Searchbar } from 'react-native-paper';
-* 
-* const MyComponent = () => {
-*   const [searchQuery, setSearchQuery] = React.useState('');
-* 
-*   return (
-*     <Searchbar
-*       placeholder="Search"
-*       onChangeText={setSearchQuery}
-*       value={searchQuery}
-*     />
-*   );
-* };
-* 
-* export default MyComponent;
-* 
-* ```
-*/
-
+ * @uxpindocurl https://callstack.github.io/react-native-paper/docs/components/Searchbar
+ * @uxpindescription Searchbar is a simple input box where users can type search queries.
+ *
+ * ## Usage
+ * ```js
+ * import * as React from 'react';
+ * import { Searchbar } from 'react-native-paper';
+ *
+ * const MyComponent = () => {
+ *   const [searchQuery, setSearchQuery] = React.useState('');
+ *
+ *   return (
+ *     <Searchbar
+ *       placeholder="Search"
+ *       onChangeText={setSearchQuery}
+ *       value={searchQuery}
+ *     />
+ *   );
+ * };
+ *
+ * export default MyComponent;
+ *
+ * ```
+ */
 
 const Searchbar = (props) => {
   return <SearchbarM {...props} />;
 };
 
 Searchbar.propTypes = {
-  children: PropTypes.node,
-/** Hint text shown when the input is empty. */
+  // children: PropTypes.node,
+  // /** Hint text shown when the input is empty. */
   placeholder: PropTypes.string,
   /** The value of the text input. */
   value: PropTypes.string,
@@ -43,9 +42,13 @@ Searchbar.propTypes = {
   onChangeText: PropTypes.func,
   /** @supported Available in v5.x with theme version 3
 Search layout mode, the default value is "bar". */
-  mode: PropTypes.oneOf(['bar', 'view']),
+  mode: PropTypes.oneOf(["bar", "view"]),
   /** Icon name for the left icon button (see `onIconPress`). */
-  icon: PropTypes.oneOf([PropTypes.oneOf([PropTypes.string, PropTypes.object]), PropTypes.object, PropTypes.object]),
+  icon: PropTypes.oneOf([
+    PropTypes.oneOf([PropTypes.string, PropTypes.object]),
+    PropTypes.object,
+    PropTypes.object,
+  ]),
   /** Custom color for icon, default will be derived from theme */
   iconColor: PropTypes.string,
   /** Color of the ripple effect. */
@@ -58,13 +61,21 @@ Search layout mode, the default value is "bar". */
   searchAccessibilityLabel: PropTypes.string,
   /** Custom icon for clear button, default will be icon close. It's visible when `loading` is set to `false`.
 In v5.x with theme version 3, `clearIcon` is visible only `right` prop is not defined. */
-  clearIcon: PropTypes.oneOf([PropTypes.oneOf([PropTypes.string, PropTypes.object]), PropTypes.object, PropTypes.object]),
+  clearIcon: PropTypes.oneOf([
+    PropTypes.oneOf([PropTypes.string, PropTypes.object]),
+    PropTypes.object,
+    PropTypes.object,
+  ]),
   /** Accessibility label for the button. This is read by the screen reader when the user taps the button. */
   clearAccessibilityLabel: PropTypes.string,
   /** @supported Available in v5.x with theme version 3
 Icon name for the right trailering icon button.
 Works only when `mode` is set to "bar". It won't be displayed if `loading` is set to `true`. */
-  traileringIcon: PropTypes.oneOf([PropTypes.oneOf([PropTypes.string, PropTypes.object]), PropTypes.object, PropTypes.object]),
+  traileringIcon: PropTypes.oneOf([
+    PropTypes.oneOf([PropTypes.string, PropTypes.object]),
+    PropTypes.object,
+    PropTypes.object,
+  ]),
   /** @supported Available in v5.x with theme version 3
 Custom color for the right trailering icon, default will be derived from theme */
   traileringIconColor: PropTypes.string,
@@ -86,28 +97,18 @@ Works only when `mode` is set to "view". True by default. */
   showDivider: PropTypes.bool,
   /** @supported Available in v5.x with theme version 3
 Changes Searchbar shadow and background on iOS and Android. */
-  elevation: PropTypes.oneOf(['0', '1', '2', '3', '4', '5', PropTypes.object]),
+  elevation: PropTypes.oneOf(["0", "1", "2", "3", "4", "5", PropTypes.object]),
   /** Set style of the TextInput component inside the searchbar */
   inputStyle: PropTypes.object,
   style: PropTypes.object,
   /** Custom flag for replacing clear button with activity indicator. */
-  loading: PropTypes.object,
+  loading: PropTypes.bool,
   /** TestID used for testing purposes */
   testID: PropTypes.string,
   /** @optional */
   theme: PropTypes.object,
 };
 
-Searchbar.defaultProps = {
-  children: undefined,
-mode: 'bar',
-searchAccessibilityLabel: 'search',
-clearAccessibilityLabel: 'clear',
-showDivider: true,
-elevation: 0,
-loading: false,
-testID: 'search-bar',
-
-};
+Searchbar.defaultProps = {};
 
 export default Searchbar;

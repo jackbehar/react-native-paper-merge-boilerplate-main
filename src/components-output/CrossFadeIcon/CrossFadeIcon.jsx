@@ -1,12 +1,11 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { CrossFadeIcon as CrossFadeIconM } from 'react-native-paper';
+import React from "react";
+import PropTypes from "prop-types";
+import { CrossFadeIcon as CrossFadeIconM } from "react-native-paper";
 
 /**
-* @uxpindocurl https://callstack.github.io/react-native-paper/docs/components/CrossFadeIcon
-* @uxpindescription 
-*/
-
+ * @uxpindocurl https://callstack.github.io/react-native-paper/docs/components/CrossFadeIcon
+ * @uxpindescription
+ */
 
 const CrossFadeIcon = (props) => {
   return <CrossFadeIconM {...props} />;
@@ -14,9 +13,15 @@ const CrossFadeIcon = (props) => {
 
 CrossFadeIcon.propTypes = {
   children: PropTypes.node,
-/** Icon to display for the `CrossFadeIcon`. */
-  source: PropTypes.oneOf([PropTypes.oneOf([PropTypes.string, PropTypes.object]), PropTypes.object, PropTypes.object]),
-  /** Color of the icon. */
+  /** Icon to display for the `CrossFadeIcon`. */
+  source: PropTypes.oneOf([
+    PropTypes.oneOf([PropTypes.string, PropTypes.object]),
+    PropTypes.object,
+    PropTypes.object,
+  ]),
+  /** Color of the icon.
+   * @uxpincontroltype color
+   */
   color: PropTypes.string,
   /** Size of the icon. */
   size: PropTypes.number,
@@ -28,8 +33,7 @@ CrossFadeIcon.propTypes = {
 
 CrossFadeIcon.defaultProps = {
   children: undefined,
-testID: 'cross-fade-icon',
-
+  testID: "cross-fade-icon",
 };
 
 export default CrossFadeIcon;

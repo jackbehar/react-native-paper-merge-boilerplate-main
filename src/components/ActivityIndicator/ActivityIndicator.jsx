@@ -28,7 +28,9 @@ ActivityIndicator.propTypes = {
   children: PropTypes.node,
   /** Whether to show the indicator or hide it. */
   animating: PropTypes.bool,
-  /** The color of the spinner. */
+  /** The color of the spinner.
+   * @uxpincontroltype color
+   */
   color: PropTypes.string,
   /** Size of the indicator. */
   size: PropTypes.oneOf(["small", "large", PropTypes.number]),

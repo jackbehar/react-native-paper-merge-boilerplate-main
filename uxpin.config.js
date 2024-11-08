@@ -21,6 +21,9 @@ module.exports = {
           "src/components/Text/Text.jsx",
           "src/components/Tooltip/Tooltip.jsx",
           "src/components/TouchableRipple/TouchableRipple.jsx",
+          "src/components/AvatarText/AvatarText.jsx",
+          "src/components/AvatarIcon/AvatarIcon.jsx",
+          "src/components/AvatarImage/AvatarImage.jsx",
         ],
       },
       {

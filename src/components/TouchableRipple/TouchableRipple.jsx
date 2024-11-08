@@ -1,21 +1,24 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Touchable as TouchableM } from 'react-native-paper';
+import React from "react";
+import PropTypes from "prop-types";
+import { TouchableRipple as TouchableRippleM } from "react-native-paper";
 
 /**
-* @uxpindocurl https://callstack.github.io/react-native-paper/docs/components/Touchable
-* @uxpindescription 
-*/
+ * @uxpindocurl https://callstack.github.io/react-native-paper/docs/components/Touchable
+ * @uxpindescription
+ */
 
-
-const Touchable = (props) => {
-  return <TouchableM {...props} />;
+const TouchableRipple = (props) => {
+  return <TouchableRippleM {...props} onPress={() => undefined} />;
 };
 
-Touchable.propTypes = {
+TouchableRipple.propTypes = {
   children: PropTypes.node,
 
-  style: PropTypes.oneOf([PropTypes.object, PropTypes.object, PropTypes.object]),
+  style: PropTypes.oneOf([
+    PropTypes.object,
+    PropTypes.object,
+    PropTypes.object,
+  ]),
   /** Whether to render the ripple outside the view bounds. */
   borderless: PropTypes.bool,
   /** Type of background drawabale to display the feedback (Android).
@@ -33,9 +36,13 @@ https://reactnative.dev/docs/pressable#rippleconfig */
   onPressIn: PropTypes.func,
   /** Function to execute when a touch is released. */
   onPressOut: PropTypes.func,
-  /** Color of the ripple effect (Android >= 5.0 and Web). */
-  rippleColor: PropTypes.object,
-  /** Color of the underlay for the highlight effect (Android < 5.0 and iOS). */
+  /** Color of the ripple effect (Android >= 5.0 and Web).
+   * @uxpincontroltype color
+   */
+  rippleColor: PropTypes.string,
+  /** Color of the underlay for the highlight effect (Android < 5.0 and iOS).
+   * @uxpincontroltype color
+   */
   underlayColor: PropTypes.string,
   /** @optional */
   theme: PropTypes.object,
@@ -43,9 +50,4 @@ https://reactnative.dev/docs/pressable#rippleconfig */
   route: PropTypes.object,
 };
 
-Touchable.defaultProps = {
-  children: undefined,
-
-};
-
-export default Touchable;
+export default TouchableRipple;

@@ -31,21 +31,19 @@ Switch.propTypes = {
   children: PropTypes.node,
   /** Disable toggling the switch. */
   disabled: PropTypes.bool,
-  /** Value of the switch, true means 'on', false means 'off'. */
+  /** Value of the switch, true means 'on', false means 'off'.
+   * @uxpinbind onValueChange 0
+   */
   value: PropTypes.bool,
   /** Custom color for switch.
    * @uxpincontroltype color
    */
   color: PropTypes.string,
   /** Callback called with the new value when it changes. */
-  onValueChange: PropTypes.object,
+  onValueChange: PropTypes.func,
   style: PropTypes.object,
   /** @optional */
   theme: PropTypes.object,
-};
-
-Switch.defaultProps = {
-  children: undefined,
 };
 
 export default Switch;

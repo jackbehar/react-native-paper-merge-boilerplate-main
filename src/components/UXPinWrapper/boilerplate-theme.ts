@@ -1,11 +1,11 @@
 
-import { MD2LightTheme } from "react-native-paper";
+import { MD3LightTheme } from "react-native-paper";
 
 const boilerplateTheme = {
-  ...MD2LightTheme,
+  ...MD3LightTheme,
 
   colors: {
-    ...MD2LightTheme.colors,
+    ...MD3LightTheme.colors,
     //override tokens
     // primary: "green", 
   },

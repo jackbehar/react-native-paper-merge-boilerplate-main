@@ -15,6 +15,12 @@ module.exports = {
           "src/components/Portal/Portal.jsx",
           "src/components/Searchbar/Searchbar.jsx",
           "src/components/ProgressBar/ProgressBar.jsx",
+          "src/components/Snackbar/Snackbar.jsx",
+          "src/components/Surface/Surface.jsx",
+          "src/components/Switch/Switch.jsx",
+          "src/components/Text/Text.jsx",
+          "src/components/Tooltip/Tooltip.jsx",
+          "src/components/TouchableRipple/TouchableRipple.jsx",
         ],
       },
       {

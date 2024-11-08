@@ -29,6 +29,9 @@ module.exports = {
           "src/components/AvatarText/AvatarText.jsx",
           "src/components/AvatarIcon/AvatarIcon.jsx",
           "src/components/AvatarImage/AvatarImage.jsx",
+          "src/components/BottomNavigation/BottomNavigation.jsx", //Not working
+          "src/components/BottomNavigation/Bar/Bar.jsx", //Not working
+          "src/components/MaterialCommunityIcons/MaterialCommunityIcons.jsx", //Not working
         ],
       },
       {

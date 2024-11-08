@@ -1,65 +1,65 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { BottomNavigation as BottomNavigationM } from 'react-native-paper';
+import React from "react";
+import PropTypes from "prop-types";
+import { BottomNavigation as BottomNavigationM } from "react-native-paper";
+import Bar from "./Bar/Bar";
 
 /**
-* @uxpindocurl https://callstack.github.io/react-native-paper/docs/components/BottomNavigation
-* @uxpindescription BottomNavigation provides quick navigation between top-level views of an app with a bottom navigation bar.
-* It is primarily designed for use on mobile. If you want to use the navigation bar only see [`BottomNavigation.Bar`](BottomNavigationBar).
-* 
-* By default BottomNavigation uses primary color as a background, in dark theme with `adaptive` mode it will use surface colour instead.
-* See [Dark Theme](https://callstack.github.io/react-native-paper/docs/guides/theming#dark-theme) for more information.
-* 
-* ## Usage
-* ```js
-* import * as React from 'react';
-* import { BottomNavigation, Text } from 'react-native-paper';
-* 
-* const MusicRoute = () => <Text>Music</Text>;
-* 
-* const AlbumsRoute = () => <Text>Albums</Text>;
-* 
-* const RecentsRoute = () => <Text>Recents</Text>;
-* 
-* const NotificationsRoute = () => <Text>Notifications</Text>;
-* 
-* const MyComponent = () => {
-*   const [index, setIndex] = React.useState(0);
-*   const [routes] = React.useState([
-*     { key: 'music', title: 'Favorites', focusedIcon: 'heart', unfocusedIcon: 'heart-outline'},
-*     { key: 'albums', title: 'Albums', focusedIcon: 'album' },
-*     { key: 'recents', title: 'Recents', focusedIcon: 'history' },
-*     { key: 'notifications', title: 'Notifications', focusedIcon: 'bell', unfocusedIcon: 'bell-outline' },
-*   ]);
-* 
-*   const renderScene = BottomNavigation.SceneMap({
-*     music: MusicRoute,
-*     albums: AlbumsRoute,
-*     recents: RecentsRoute,
-*     notifications: NotificationsRoute,
-*   });
-* 
-*   return (
-*     <BottomNavigation
-*       navigationState={{ index, routes }}
-*       onIndexChange={setIndex}
-*       renderScene={renderScene}
-*     />
-*   );
-* };
-* 
-* export default MyComponent;
-* ```
-*/
-
+ * @uxpindocurl https://callstack.github.io/react-native-paper/docs/components/BottomNavigation
+ * @uxpindescription BottomNavigation provides quick navigation between top-level views of an app with a bottom navigation bar.
+ * It is primarily designed for use on mobile. If you want to use the navigation bar only see [`BottomNavigation.Bar`](BottomNavigationBar).
+ *
+ * By default BottomNavigation uses primary color as a background, in dark theme with `adaptive` mode it will use surface colour instead.
+ * See [Dark Theme](https://callstack.github.io/react-native-paper/docs/guides/theming#dark-theme) for more information.
+ *
+ * ## Usage
+ * ```js
+ * import * as React from 'react';
+ * import { BottomNavigation, Text } from 'react-native-paper';
+ *
+ * const MusicRoute = () => <Text>Music</Text>;
+ *
+ * const AlbumsRoute = () => <Text>Albums</Text>;
+ *
+ * const RecentsRoute = () => <Text>Recents</Text>;
+ *
+ * const NotificationsRoute = () => <Text>Notifications</Text>;
+ *
+ * const MyComponent = () => {
+ *   const [index, setIndex] = React.useState(0);
+ *   const [routes] = React.useState([
+ *     { key: 'music', title: 'Favorites', focusedIcon: 'heart', unfocusedIcon: 'heart-outline'},
+ *     { key: 'albums', title: 'Albums', focusedIcon: 'album' },
+ *     { key: 'recents', title: 'Recents', focusedIcon: 'history' },
+ *     { key: 'notifications', title: 'Notifications', focusedIcon: 'bell', unfocusedIcon: 'bell-outline' },
+ *   ]);
+ *
+ *   const renderScene = BottomNavigation.SceneMap({
+ *     music: MusicRoute,
+ *     albums: AlbumsRoute,
+ *     recents: RecentsRoute,
+ *     notifications: NotificationsRoute,
+ *   });
+ *
+ *   return (
+ *     <BottomNavigation
+ *       navigationState={{ index, routes }}
+ *       onIndexChange={setIndex}
+ *       renderScene={renderScene}
+ *     />
+ *   );
+ * };
+ *
+ * export default MyComponent;
+ * ```
+ */
 
 const BottomNavigation = (props) => {
   return <BottomNavigationM {...props} />;
 };
-
+BottomNavigation.Bar = Bar;
 BottomNavigation.propTypes = {
   children: PropTypes.node,
-/** Whether the shifting style is used, the active tab icon shifts up to show the label and the inactive tabs won't have a label.
+  /** Whether the shifting style is used, the active tab icon shifts up to show the label and the inactive tabs won't have a label.
 
 By default, this is `false` with theme version 3 and `true` when you have more than 3 tabs.
 Pass `shifting={false}` to explicitly disable this animation, or `shifting={true}` to always use this animation.
@@ -100,7 +100,7 @@ Example:
 ```
 
 `BottomNavigation` is a controlled component, which means the `index` needs to be updated via the `onIndexChange` callback. */
-  navigationState: PropTypes.func,
+  navigationState: PropTypes.object,
   /** Callback which is called on tab change, receives the index of the new tab as argument.
 The navigation state needs to be updated when it's called, otherwise the change is dropped. */
   onIndexChange: PropTypes.func,
@@ -172,7 +172,7 @@ Specify `sceneAnimationEnabled` as `false` to disable the animation. */
   sceneAnimationEnabled: PropTypes.bool,
   /** The scene animation effect. Specify `'shifting'` for a different effect.
 By default, 'opacity' will be used. */
-  sceneAnimationType: PropTypes.oneOf(['opacity', 'shifting']),
+  sceneAnimationType: PropTypes.oneOf(["opacity", "shifting"]),
   /** The scene animation Easing. */
   sceneAnimationEasing: PropTypes.oneOf([PropTypes.object, PropTypes.object]),
   /** Whether the bottom navigation bar is hidden when keyboard is shown.
@@ -195,18 +195,6 @@ barStyle={{ backgroundColor: '#694fad' }}
   theme: PropTypes.object,
   /** TestID used for testing purposes */
   testID: PropTypes.string,
-};
-
-BottomNavigation.defaultProps = {
-  children: undefined,
-labeled: true,
-getLazy: ({ route }: { route: Route }) => route.lazy,
-sceneAnimationEnabled: false,
-sceneAnimationType: 'opacity',
-keyboardHidesNavigationBar: Platform.OS === 'android',
-labelMaxFontSizeMultiplier: 1,
-testID: 'bottom-navigation',
-
 };
 
 export default BottomNavigation;

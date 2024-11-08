@@ -1,129 +1,129 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { BottomNavigation.Bar as BottomNavigation.BarM } from 'react-native-paper';
+import React from "react";
+import PropTypes from "prop-types";
+import { BottomNavigation as BottomNavigationM } from "react-native-paper";
 
 /**
-* @uxpindocurl https://callstack.github.io/react-native-paper/docs/components/BottomNavigation.Bar
-* @uxpindescription A navigation bar which can easily be integrated with [React Navigation's Bottom Tabs Navigator](https://reactnavigation.org/docs/bottom-tab-navigator/).
-* 
-* ## Usage
-* ```js
-* import React from 'react';
-* import { View, StyleSheet } from 'react-native';
-* 
-* import { CommonActions } from '@react-navigation/native';
-* import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-* import { Text, BottomNavigation } from 'react-native-paper';
-* import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-* 
-* const Tab = createBottomTabNavigator();
-* 
-* export default function MyComponent() {
-*   return (
-*     <Tab.Navigator
-*       screenOptions={{
-*         headerShown: false,
-*       }}
-*       tabBar={({ navigation, state, descriptors, insets }) => (
-*         <BottomNavigation.Bar
-*           navigationState={state}
-*          safeAreaInsets={insets}
-*           onTabPress={({ route, preventDefault }) => {
-*             const event = navigation.emit({
-*               type: 'tabPress',
-*               target: route.key,
-*               canPreventDefault: true,
-*             });
-* 
-*             if (event.defaultPrevented) {
-*               preventDefault();
-*             } else {
-*              navigation.dispatch({
-*                 ...CommonActions.navigate(route.name, route.params),
-*                 target: state.key,
-*               });
-*             }
-*           }}
-*           renderIcon={({ route, focused, color }) => {
-*             const { options } = descriptors[route.key];
-*             if (options.tabBarIcon) {
-*               return options.tabBarIcon({ focused, color, size: 24 });
-*             }
-* 
-*             return null;
-*           }}
-*           getLabelText={({ route }) => {
-*             const { options } = descriptors[route.key];
-*             const label =
-*               options.tabBarLabel !== undefined
-*                 ? options.tabBarLabel
-*                 : options.title !== undefined
-*                 ? options.title
-*                 : route.title;
-* 
-*             return label;
-*           }}
-*         />
-*       )}
-*     >
-*       <Tab.Screen
-*         name="Home"
-*         component={HomeScreen}
-*         options={{
-*           tabBarLabel: 'Home',
-*           tabBarIcon: ({ color, size }) => {
-*             return <Icon name="home" size={size} color={color} />;
-*           },
-*         }}
-*       />
-*       <Tab.Screen
-*         name="Settings"
-*         component={SettingsScreen}
-*         options={{
-*           tabBarLabel: 'Settings',
-*           tabBarIcon: ({ color, size }) => {
-*             return <Icon name="cog" size={size} color={color} />;
-*           },
-*         }}
-*       />
-*     </Tab.Navigator>
-*   );
-* }
-* 
-* function HomeScreen() {
-*   return (
-*     <View style={styles.container}>
-*       <Text variant="headlineMedium">Home!</Text>
-*     </View>
-*   );
-* }
-* 
-* function SettingsScreen() {
-*   return (
-*     <View style={styles.container}>
-*       <Text variant="headlineMedium">Settings!</Text>
-*     </View>
-*   );
-* }
-* 
-* const styles = StyleSheet.create({
-*   container: {
-*     flex: 1,
-*     justifyContent: 'center',
-*     alignItems: 'center',
-*   },
-* });
-* ```
-*/
+ * @uxpindocurl https://callstack.github.io/react-native-paper/docs/components/BottomNavigation.Bar
+ * @uxpindescription A navigation bar which can easily be integrated with [React Navigation's Bottom Tabs Navigator](https://reactnavigation.org/docs/bottom-tab-navigator/).
+ * @uxpinnamespace BottomNavigation
+ *
+ * ## Usage
+ * ```js
+ * import React from 'react';
+ * import { View, StyleSheet } from 'react-native';
+ *
+ * import { CommonActions } from '@react-navigation/native';
+ * import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+ * import { Text, BottomNavigation } from 'react-native-paper';
+ * import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+ *
+ * const Tab = createBottomTabNavigator();
+ *
+ * export default function MyComponent() {
+ *   return (
+ *     <Tab.Navigator
+ *       screenOptions={{
+ *         headerShown: false,
+ *       }}
+ *       tabBar={({ navigation, state, descriptors, insets }) => (
+ *         <BottomNavigation.Bar
+ *           navigationState={state}
+ *          safeAreaInsets={insets}
+ *           onTabPress={({ route, preventDefault }) => {
+ *             const event = navigation.emit({
+ *               type: 'tabPress',
+ *               target: route.key,
+ *               canPreventDefault: true,
+ *             });
+ *
+ *             if (event.defaultPrevented) {
+ *               preventDefault();
+ *             } else {
+ *              navigation.dispatch({
+ *                 ...CommonActions.navigate(route.name, route.params),
+ *                 target: state.key,
+ *               });
+ *             }
+ *           }}
+ *           renderIcon={({ route, focused, color }) => {
+ *             const { options } = descriptors[route.key];
+ *             if (options.tabBarIcon) {
+ *               return options.tabBarIcon({ focused, color, size: 24 });
+ *             }
+ *
+ *             return null;
+ *           }}
+ *           getLabelText={({ route }) => {
+ *             const { options } = descriptors[route.key];
+ *             const label =
+ *               options.tabBarLabel !== undefined
+ *                 ? options.tabBarLabel
+ *                 : options.title !== undefined
+ *                 ? options.title
+ *                 : route.title;
+ *
+ *             return label;
+ *           }}
+ *         />
+ *       )}
+ *     >
+ *       <Tab.Screen
+ *         name="Home"
+ *         component={HomeScreen}
+ *         options={{
+ *           tabBarLabel: 'Home',
+ *           tabBarIcon: ({ color, size }) => {
+ *             return <Icon name="home" size={size} color={color} />;
+ *           },
+ *         }}
+ *       />
+ *       <Tab.Screen
+ *         name="Settings"
+ *         component={SettingsScreen}
+ *         options={{
+ *           tabBarLabel: 'Settings',
+ *           tabBarIcon: ({ color, size }) => {
+ *             return <Icon name="cog" size={size} color={color} />;
+ *           },
+ *         }}
+ *       />
+ *     </Tab.Navigator>
+ *   );
+ * }
+ *
+ * function HomeScreen() {
+ *   return (
+ *     <View style={styles.container}>
+ *       <Text variant="headlineMedium">Home!</Text>
+ *     </View>
+ *   );
+ * }
+ *
+ * function SettingsScreen() {
+ *   return (
+ *     <View style={styles.container}>
+ *       <Text variant="headlineMedium">Settings!</Text>
+ *     </View>
+ *   );
+ * }
+ *
+ * const styles = StyleSheet.create({
+ *   container: {
+ *     flex: 1,
+ *     justifyContent: 'center',
+ *     alignItems: 'center',
+ *   },
+ * });
+ * ```
+ */
 
-
-const BottomNavigation.Bar = (props) => {
-  return <BottomNavigation.BarM {...props} />;
+const Bar = (props) => {
+  return <BottomNavigationM.Bar {...props} />;
 };
 
-BottomNavigation.Bar.propTypes = {
+Bar.propTypes = {
   children: PropTypes.node,
-/** Whether the shifting style is used, the active tab icon shifts up to show the label and the inactive tabs won't have a label.
+  /** Whether the shifting style is used, the active tab icon shifts up to show the label and the inactive tabs won't have a label.
 
 By default, this is `false` with theme version 3 and `true` when you have more than 3 tabs.
 Pass `shifting={false}` to explicitly disable this animation, or `shifting={true}` to always use this animation.
@@ -209,20 +209,4 @@ The bottom insets for iOS is added by default. You can override the behavior wit
   testID: PropTypes.string,
 };
 
-BottomNavigation.Bar.defaultProps = {
-  children: undefined,
-labeled: true,
-renderTouchable: (props: TouchableProps<Route>) => <Touchable {...props} />,
-getAccessibilityLabel: ({ route }: { route: Route }) =>
-route.accessibilityLabel,
-getBadge: ({ route }: { route: Route }) => route.badge,
-getColor: ({ route }: { route: Route }) => route.color,
-getLabelText: ({ route }: { route: Route }) => route.title,
-getTestID: ({ route }: { route: Route }) => route.testID,
-keyboardHidesNavigationBar: Platform.OS === 'android',
-labelMaxFontSizeMultiplier: 1,
-testID: 'bottom-navigation-bar',
-
-};
-
-export default BottomNavigation.Bar;
+export default Bar;

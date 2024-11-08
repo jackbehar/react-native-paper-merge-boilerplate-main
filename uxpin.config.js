@@ -6,6 +6,7 @@ module.exports = {
         include: [
           "src/components/ActivityIndicator/ActivityIndicator.jsx",
           "src/components/Badge/Badge.jsx",
+          "src/components/Banner/Banner.jsx",
           "src/components/Chip/Chip.jsx",
           "src/components/Divider/Divider.jsx",
           "src/components/HelperText/HelperText.jsx",

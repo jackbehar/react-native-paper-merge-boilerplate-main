@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 import { Checkbox as CheckboxM } from "react-native-paper";
 
 /**
- * @uxpindocurl https://callstack.github.io/react-native-paper/docs/components/Checkbox/
- * @uxpindescription Checkboxes allow the selection of multiple options from a set.
+ * @uxpindocurl https://callstack.github.io/react-native-paper/docs/components/Checkbox/CheckboxIOS
+ * @uxpindescription Checkboxes allow the selection of multiple options from a set. This component follows platform guidelines for iOS, but can be used on any platform.
  * @uxpinnamespace Checkbox
  */
 

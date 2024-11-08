@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 import { Checkbox as CheckboxM } from "react-native-paper";
 
 /**
- * @uxpindocurl https://callstack.github.io/react-native-paper/docs/components/Checkbox/
- * @uxpindescription Checkboxes allow the selection of multiple options from a set.
+ * @uxpindocurl https://callstack.github.io/react-native-paper/docs/components/Checkbox/CheckboxItem
+ * @uxpindescription Checkbox.Item allows you to press the whole row (item) instead of only the Checkbox.
  * @uxpinnamespace Checkbox
  */
 

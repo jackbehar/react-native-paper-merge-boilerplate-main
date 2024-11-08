@@ -18,8 +18,9 @@ module.exports = {
           "src/components/Snackbar/Snackbar.jsx",
           "src/components/Surface/Surface.jsx",
           "src/components/Switch/Switch.jsx",
+          "src/components/Checkbox/Checkbox.jsx", //Issue with uxpinbind
           "src/components/Text/Text.jsx",
-          "src/components/Tooltip/Tooltip.jsx",
+          "src/components/Tooltip/Tooltip.jsx", //Issue with positioning tooltip
           "src/components/TouchableRipple/TouchableRipple.jsx",
           "src/components/AvatarText/AvatarText.jsx",
           "src/components/AvatarIcon/AvatarIcon.jsx",

@@ -19,6 +19,9 @@ module.exports = {
           "src/components/Surface/Surface.jsx",
           "src/components/Switch/Switch.jsx",
           "src/components/Checkbox/Checkbox.jsx", //Issue with uxpinbind
+          "src/components/Checkbox/Item/Item.jsx", //Issue with uxpinbind
+          "src/components/Checkbox/Android/Android.jsx", //Issue with uxpinbind
+          "src/components/Checkbox/IOS/IOS.jsx", //Issue with uxpinbind
           "src/components/Text/Text.jsx",
           "src/components/Tooltip/Tooltip.jsx", //Issue with positioning tooltip
           "src/components/TouchableRipple/TouchableRipple.jsx",

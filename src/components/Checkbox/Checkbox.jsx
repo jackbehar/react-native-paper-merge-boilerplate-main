@@ -1,6 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Checkbox as CheckboxM } from "react-native-paper";
+import Item from "./Item/Item";
+import Android from "./Android/Android";
+import IOS from "./IOS/IOS";
 
 /**
  * @uxpindocurl https://callstack.github.io/react-native-paper/docs/components/Checkbox/
@@ -10,6 +13,10 @@ import { Checkbox as CheckboxM } from "react-native-paper";
 const Checkbox = (props) => {
   return <CheckboxM {...props} />;
 };
+
+Checkbox.Item = Item;
+Checkbox.Android = Android;
+Checkbox.IOS = IOS;
 
 Checkbox.propTypes = {
   style: PropTypes.object,

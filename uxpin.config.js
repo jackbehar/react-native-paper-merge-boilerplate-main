@@ -31,7 +31,8 @@ module.exports = {
           "src/components/AvatarImage/AvatarImage.jsx",
           "src/components/BottomNavigation/BottomNavigation.jsx", //Not working
           "src/components/BottomNavigation/Bar/Bar.jsx", //Not working
-          "src/components/MaterialCommunityIcons/MaterialCommunityIcons.jsx", //Not working
+          "src/components/ListItem/ListItem.jsx",
+          "src/components/ListAccordion/ListAccordion.jsx",
         ],
       },
       {

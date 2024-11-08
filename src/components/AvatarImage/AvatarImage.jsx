@@ -34,17 +34,17 @@ Or a function that returns an `Image`.
   size: PropTypes.number,
   style: PropTypes.object,
   /** Invoked on load error. */
-  onError: PropTypes.object,
+  onError: PropTypes.func,
   /** Invoked on mount and on layout changes. */
-  onLayout: PropTypes.object,
+  onLayout: PropTypes.func,
   /** Invoked when load completes successfully. */
-  onLoad: PropTypes.object,
+  onLoad: PropTypes.func,
   /** Invoked when load either succeeds or fails. */
-  onLoadEnd: PropTypes.object,
+  onLoadEnd: PropTypes.func,
   /** Invoked on load start. */
-  onLoadStart: PropTypes.object,
+  onLoadStart: PropTypes.func,
   /** Invoked on download progress. */
-  onProgress: PropTypes.object,
+  onProgress: PropTypes.func,
   /** @optional */
   theme: PropTypes.object,
 };

@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { TextInput as TextInputM } from "react-native-paper";
 
 /**
- * @uxpindocurl https://callstack.github.io/react-native-paper/docs/components/TextInput
+ * @uxpindocurl https://callstack.github.io/react-native-paper/docs/components/TextInput/
  * @uxpindescription A component to allow users to input text.
  *
  * ## Usage

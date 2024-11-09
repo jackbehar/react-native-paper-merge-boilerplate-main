@@ -1,34 +1,33 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { TextInput as TextInputM } from 'react-native-paper';
+import React from "react";
+import PropTypes from "prop-types";
+import { TextInput as TextInputM } from "react-native-paper";
 
 /**
-* @uxpindocurl https://callstack.github.io/react-native-paper/docs/components/TextInput
-* @uxpindescription A component to allow users to input text.
-* 
-* ## Usage
-* ```js
-* import * as React from 'react';
-* import { TextInput } from 'react-native-paper';
-* 
-* const MyComponent = () => {
-*   const [text, setText] = React.useState("");
-* 
-*   return (
-*     <TextInput
-*       label="Email"
-*       value={text}
-*       onChangeText={text => setText(text)}
-*     />
-*   );
-* };
-* 
-* export default MyComponent;
-* ```
-* 
-* @extends TextInput props https://reactnative.dev/docs/textinput#props
-*/
-
+ * @uxpindocurl https://callstack.github.io/react-native-paper/docs/components/TextInput
+ * @uxpindescription A component to allow users to input text.
+ *
+ * ## Usage
+ * ```js
+ * import * as React from 'react';
+ * import { TextInput } from 'react-native-paper';
+ *
+ * const MyComponent = () => {
+ *   const [text, setText] = React.useState("");
+ *
+ *   return (
+ *     <TextInput
+ *       label="Email"
+ *       value={text}
+ *       onChangeText={text => setText(text)}
+ *     />
+ *   );
+ * };
+ *
+ * export default MyComponent;
+ * ```
+ *
+ * @extends TextInput props https://reactnative.dev/docs/textinput#props
+ */
 
 const TextInput = (props) => {
   return <TextInputM {...props} />;
@@ -36,13 +35,13 @@ const TextInput = (props) => {
 
 TextInput.propTypes = {
   children: PropTypes.node,
-/** Mode of the TextInput.
+  /** Mode of the TextInput.
 - `flat` - flat input with an underline.
 - `outlined` - input with an outline.
 
 In `outlined` mode, the background color of the label is derived from `colors?.background` in theme or the `backgroundColor` style.
 This component render TextInputOutlined or TextInputFlat based on that props */
-  mode: PropTypes.oneOf(['flat', 'outlined']),
+  mode: PropTypes.oneOf(["flat", "outlined"]),
   left: PropTypes.object,
   right: PropTypes.object,
   /** If true, user won't be able to interact with the component. */
@@ -103,7 +102,9 @@ Example:
 />
 ``` */
   render: PropTypes.func,
-  /** Value of the text input. */
+  /** Value of the text input.
+   * @uxpinbind onChangeText 0
+   */
   value: PropTypes.string,
   /** Pass `fontSize` prop to modify the font size inside `TextInput`.
 Pass `height` prop to set `TextInput` height. When `height` is passed,
@@ -128,18 +129,6 @@ Overrides style when mode is set to `flat`
 Example: `borderRadius`, `borderColor` */
   underlineStyle: PropTypes.object,
   editable: PropTypes.any,
-};
-
-TextInput.defaultProps = {
-  children: undefined,
-mode: 'flat',
-disabled: false,
-error: false,
-dense: false,
-multiline: false,
-render: (props: RenderProps) => <NativeTextInput {...props} />,
-editable: true,
-
 };
 
 export default TextInput;

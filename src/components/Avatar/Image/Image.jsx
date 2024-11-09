@@ -16,13 +16,14 @@ import { Avatar as AvatarM } from "react-native-paper";
  * );
  * export default MyComponent
  * ```
+ * @uxpinnamespace Avatar
  */
 
-const AvatarImage = (props) => {
+const Image = (props) => {
   return <AvatarM.Image {...props} />;
 };
 
-AvatarImage.propTypes = {
+Image.propTypes = {
   children: PropTypes.node,
   /** Image to display for the `Avatar`.
 It accepts a standard React Native Image `source` prop
@@ -49,4 +50,4 @@ Or a function that returns an `Image`.
   theme: PropTypes.object,
 };
 
-export default AvatarImage;
+export default Image;

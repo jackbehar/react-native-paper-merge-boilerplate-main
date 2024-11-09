@@ -1,6 +1,8 @@
-import * as React from "react";
-import { TextInput } from "../TextInput";
+import React from 'react';
+import TextInput from '../TextInput';
 
 export default (
-  <TextInput label="Enter Email" mode="outlined" uxpId="textinput-1" />
+  <TextInput uxpId='TextInput-1'>
+    {/* Insert children or other props here */}
+  </TextInput>
 );

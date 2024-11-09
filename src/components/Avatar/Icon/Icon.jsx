@@ -15,13 +15,14 @@ import { Avatar as AvatarM } from "react-native-paper";
  *   <Avatar.Icon size={24} icon="folder" />
  * );
  * ```
+ * @uxpinnamespace Avatar
  */
 
-const AvatarIcon = (props) => {
+const Icon = (props) => {
   return <AvatarM.Icon {...props} />;
 };
 
-AvatarIcon.propTypes = {
+Icon.propTypes = {
   children: PropTypes.node,
   /** Icon to display for the `Avatar`. */
   icon: PropTypes.oneOf([
@@ -40,4 +41,4 @@ AvatarIcon.propTypes = {
   theme: PropTypes.object,
 };
 
-export default AvatarIcon;
+export default Icon;

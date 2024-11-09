@@ -17,13 +17,13 @@ import { Avatar as AvatarM } from "react-native-paper";
  * ```
  */
 /**
- * @uxpinnamespacesssss Avatar
+ * @uxpinnamespace Avatar
  */
-const AvatarText = (props) => {
+const Text = (props) => {
   return <AvatarM.Text {...props} />;
 };
 
-AvatarText.propTypes = {
+Text.propTypes = {
   /** Initials to show as the text in the `Avatar`. */
   label: PropTypes.string,
   /** Size of the avatar. */
@@ -42,4 +42,4 @@ AvatarText.propTypes = {
   theme: PropTypes.object,
 };
 
-export default AvatarText;
+export default Text;

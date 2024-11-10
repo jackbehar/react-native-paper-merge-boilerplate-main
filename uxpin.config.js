@@ -40,6 +40,9 @@ module.exports = {
           "src/components/ListItem/ListItem.jsx",
           "src/components/ListAccordion/ListAccordion.jsx",
           "src/components/TextInput/TextInput.jsx",
+          "src/components/ToggleButton/ToggleButton.jsx",
+          "src/components/ToggleButton/Group/Group.jsx",
+          "src/components/ToggleButton/Row/Row.jsx",
         ],
       },
 

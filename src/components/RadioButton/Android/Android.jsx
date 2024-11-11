@@ -1,27 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Checkbox as CheckboxM } from "react-native-paper";
+import { RadioButton as RadioButtonM } from "react-native-paper";
 
 /**
  * @uxpindocurl https://callstack.github.io/react-native-paper/docs/components/Checkbox/CheckboxAndroid
  * @uxpindescription Checkboxes allow the selection of multiple options from a set. This component follows platform guidelines for Android, but can be used on any platform.
- * @uxpinnamespace Checkbox
+ * @uxpinnamespace RadioButton
  */
 
 const Android = (props) => {
-  const [status, setStatus] = React.useState(props.status);
-
-  const onButtonToggle = (value) => {
-    setStatus(status === "checked" ? "unchecked" : "checked");
-  };
-
-  React.useEffect(() => {
-    setStatus(props.status);
-  }, [props.status]); // Only re-run the effect if open prop changes
-
-  return (
-    <CheckboxM.Android {...props} status={status} onPress={onButtonToggle} />
-  );
+  return <RadioButtonM.Android {...props} />;
 };
 
 Android.propTypes = {

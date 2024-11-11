@@ -43,6 +43,10 @@ module.exports = {
           "src/components/ToggleButton/ToggleButton.jsx",
           "src/components/ToggleButton/Group/Group.jsx",
           "src/components/ToggleButton/Row/Row.jsx",
+          "src/components/RadioButton/RadioButton.jsx",
+          "src/components/RadioButton/Item/Item.jsx",
+          "src/components/RadioButton/IOS/IOS.jsx",
+          "src/components/RadioButton/Android/Android.jsx",
         ],
       },
 

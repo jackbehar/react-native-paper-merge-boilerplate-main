@@ -9,7 +9,17 @@ import { Checkbox as CheckboxM } from "react-native-paper";
  */
 
 const IOS = (props) => {
-  return <CheckboxM.IOS {...props} />;
+  const [status, setStatus] = React.useState(props.status);
+
+  const onButtonToggle = (value) => {
+    setStatus(status === "checked" ? "unchecked" : "checked");
+  };
+
+  React.useEffect(() => {
+    setStatus(props.status);
+  }, [props.status]); // Only re-run the effect if open prop changes
+
+  return <CheckboxM.IOS {...props} status={status} onPress={onButtonToggle} />;
 };
 
 IOS.propTypes = {

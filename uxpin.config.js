@@ -47,6 +47,9 @@ module.exports = {
           "src/components/RadioButton/Item/Item.jsx",
           "src/components/RadioButton/IOS/IOS.jsx",
           "src/components/RadioButton/Android/Android.jsx",
+          "src/components/Dialog/Dialog.jsx",
+          "src/components/Dialog/Actions/Actions.jsx",
+          "src/components/Dialog/Content/Content.jsx",
         ],
       },
 

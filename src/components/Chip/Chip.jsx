@@ -1,51 +1,69 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Chip as ChipM } from 'react-native-paper';
+import React from "react";
+import PropTypes from "prop-types";
+import { Chip as ChipM } from "react-native-paper";
 
 /**
-* @uxpindocurl https://callstack.github.io/react-native-paper/docs/components/Chip
-* @uxpindescription Chips are compact elements that can represent inputs, attributes, or actions.
-* They can have an icon or avatar on the left, and a close button icon on the right.
-* They are typically used to:
-* <ul>
-*  <li>Present multiple options </li>
-*  <li>Represent attributes active or chosen </li>
-*  <li>Present filter options </li>
-*  <li>Trigger actions related to primary content </li>
-* </ul>
-* 
-* ## Usage
-* ```js
-* import * as React from 'react';
-* import { Chip } from 'react-native-paper';
-* 
-* const MyComponent = () => (
-*   <Chip icon="information" onPress={() => console.log('Pressed')}>Example Chip</Chip>
-* );
-* 
-* export default MyComponent;
-* ```
-*/
-
+ * @uxpindocurl https://callstack.github.io/react-native-paper/docs/components/Chip
+ * @uxpindescription Chips are compact elements that can represent inputs, attributes, or actions.
+ * They can have an icon or avatar on the left, and a close button icon on the right.
+ * They are typically used to:
+ * <ul>
+ *  <li>Present multiple options </li>
+ *  <li>Represent attributes active or chosen </li>
+ *  <li>Present filter options </li>
+ *  <li>Trigger actions related to primary content </li>
+ * </ul>
+ *
+ * ## Usage
+ * ```js
+ * import * as React from 'react';
+ * import { Chip } from 'react-native-paper';
+ *
+ * const MyComponent = () => (
+ *   <Chip icon="information" onPress={() => console.log('Pressed')}>Example Chip</Chip>
+ * );
+ *
+ * export default MyComponent;
+ * ```
+ */
 
 const Chip = (props) => {
-  return <ChipM {...props} />;
+  const [selected, setSelected] = React.useState(props.selected);
+
+  React.useEffect(() => {
+    setSelected(props.selected);
+  }, [props.selected]); // Only re-run the effect if open prop changes
+
+  const handlePress = () => {
+    setSelected(!selected); // Toggle selection
+  };
+
+  return (
+    <ChipM
+      selected={selected} // Sets the visual state of the Chip
+      onPress={handlePress} // Toggle selection on press
+      mode="outlined" // Optional: can be "flat" or "outlined"
+    >
+      {selected ? "Selected" : "Not Selected"}
+    </ChipM>
+  );
 };
 
 Chip.propTypes = {
   children: PropTypes.node,
-/** Mode of the chip.
+  /** Mode of the chip.
 - `flat` - flat chip without outline.
 - `outlined` - chip with an outline. */
-  mode: PropTypes.oneOf(['flat', 'outlined']),
-  
+  mode: PropTypes.oneOf(["flat", "outlined"]),
+
   /** Icon to display for the `Chip`. Both icon and avatar cannot be specified. */
-  icon: PropTypes.oneOf([PropTypes.oneOf([PropTypes.string, PropTypes.object]), PropTypes.object, PropTypes.object]),
+  icon: PropTypes.node,
   /** Avatar to display for the `Chip`. Both icon and avatar cannot be specified. */
-  avatar: PropTypes.object,
+  avatar: PropTypes.node,
   /** Icon to display as the close button for the `Chip`. The icon appears only when the onClose prop is specified. */
-  closeIcon: PropTypes.oneOf([PropTypes.oneOf([PropTypes.string, PropTypes.object]), PropTypes.object, PropTypes.object]),
-  /** Whether chip is selected. */
+  closeIcon: PropTypes.node,
+  /** Whether chip is selected.
+   */
   selected: PropTypes.bool,
   /** Whether to style the chip color as selected.
 Note: With theme version 3 `selectedColor` doesn't apply to the `icon`.
@@ -68,7 +86,7 @@ https://reactnative.dev/docs/pressable#rippleconfig */
   accessibilityLabel: PropTypes.string,
   /** Accessibility label for the close icon. This is read by the screen reader when the user taps the close icon. */
   closeIconAccessibilityLabel: PropTypes.string,
-  /** Function to execute on press. */
+  /** Function to execute on press.*/
   onPress: PropTypes.func,
   /** Function to execute on long press. */
   onLongPress: PropTypes.func,
@@ -94,24 +112,10 @@ Whether chip should have the elevation. */
   /** Pass down testID from chip props to touchable for Detox tests. */
   testID: PropTypes.string,
   /** Ellipsize Mode for the children text */
-  ellipsizeMode: PropTypes.oneOf(['head', 'middle', 'tail', 'clip']),
+  ellipsizeMode: PropTypes.oneOf(["head", "middle", "tail", "clip"]),
   /** Specifies the largest possible scale a text font can reach. */
   maxFontSizeMultiplier: PropTypes.number,
-  accessibilityRole: PropTypes.any,
-};
-
-Chip.defaultProps = {
-  children: undefined,
-mode: 'flat',
-selected: false,
-showSelectedOverlay: false,
-showSelectedCheck: true,
-disabled: false,
-closeIconAccessibilityLabel: 'Close',
-elevated: false,
-testID: 'chip',
-accessibilityRole: 'button',
-
+  accessibilityRole: PropTypes.string,
 };
 
 export default Chip;

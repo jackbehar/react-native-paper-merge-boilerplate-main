@@ -50,6 +50,9 @@ module.exports = {
           "src/components/Dialog/Dialog.jsx",
           "src/components/Dialog/Actions/Actions.jsx",
           "src/components/Dialog/Content/Content.jsx",
+          "src/components/Dialog/ScrollArea/ScrollArea.jsx",
+          "src/components/Dialog/Title/Title.jsx",
+          "src/components/Dialog/Icon/Icon.jsx",
         ],
       },
 

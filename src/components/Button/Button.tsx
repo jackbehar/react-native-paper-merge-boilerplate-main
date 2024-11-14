@@ -7,189 +7,189 @@ import { Button as PaperButton, } from "react-native-paper";
  */
 
 export const Button = (props: ButtonProps) => (
-    <PaperButton {...props} />
+     <PaperButton {...props} />
 );
 
 export interface ButtonProps {
-    /**
-    * Label text for the button.
-     * @uxpinpropname label
-    */
-    children: ReactNode;
-
-    /**
-     * Mode of the button. Determines the visual style.
+     /**
+     * Label text for the button.
+      * @uxpinpropname label
      */
-    mode?: 'text' | 'outlined' | 'contained' | 'elevated' | 'contained-tonal';
+     children: ReactNode;
 
-    /**
-     * Whether the button uses a dark theme.
-     */
-    dark?: boolean;
+     /**
+      * Mode of the button. Determines the visual style.
+      */
+     mode?: 'text' | 'outlined' | 'contained' | 'elevated' | 'contained-tonal';
 
-    /**
-     * Whether the button uses a compact style.
-     */
-    compact?: boolean;
+     /**
+      * Whether the button uses a dark theme.
+      */
+     dark?: boolean;
 
-    /**
-     * @deprecated Deprecated in v5.x - use `buttonColor` or `textColor` instead.
-     * Custom text or background color.
-     * @uxpinignoreprop
-     */
-    color?: string;
+     /**
+      * Whether the button uses a compact style.
+      */
+     compact?: boolean;
 
-    /**
-     * Custom background color for the button.
-    
-* @uxpincontroltype color
-     */
-    buttonColor?: string;
+     /**
+      * @deprecated Deprecated in v5.x - use `buttonColor` or `textColor` instead.
+      * Custom text or background color.
+      * @uxpinignoreprop
+      */
+     color?: string;
 
-    /**
-     * Custom text color for the button.
-    
-* @uxpincontroltype color
-     */
-    textColor?: string;
+     /**
+      * Custom background color for the button.
+     
+ * @uxpincontroltype color
+      */
+     buttonColor?: string;
 
-    /**
-     * Color for the ripple effect (Android).
-    
-* @uxpincontroltype color
-     */
-    rippleColor?: string;
+     /**
+      * Custom text color for the button.
+     
+ * @uxpincontroltype color
+      */
+     textColor?: string;
 
-    /**
-     * Displays a loading indicator inside the button.
-     */
-    loading?: boolean;
+     /**
+      * Color for the ripple effect (Android).
+     
+ * @uxpincontroltype color
+      */
+     rippleColor?: string;
 
-    /**
-     * Icon to display alongside the button text.
-     */
-    icon?: string;
+     /**
+      * Displays a loading indicator inside the button.
+      */
+     loading?: boolean;
 
-    /**
-     * Disables the button, making it unpressable.
-     */
-    disabled?: boolean;
+     /**
+      * Icon to display alongside the button text.
+      */
+     icon?: string;
 
-    /**
-     * Converts the button text to uppercase.
-     */
-    uppercase?: boolean;
+     /**
+      * Disables the button, making it unpressable.
+      */
+     disabled?: boolean;
 
-    /**
-     * Configures the ripple background effect on Android.
-     */
-    background?: object;
+     /**
+      * Converts the button text to uppercase.
+      */
+     uppercase?: boolean;
 
-    /**
-     * Accessibility label for screen readers.
-     */
-    accessibilityLabel?: string;
+     /**
+      * Configures the ripple background effect on Android.
+      */
+     background?: object;
 
-    /**
-     * Accessibility hint for screen readers.
-     */
-    accessibilityHint?: string;
+     /**
+      * Accessibility label for screen readers.
+      */
+     accessibilityLabel?: string;
 
-    /**
-     * Accessibility role of the button, defaults to "button".
-     */
-    accessibilityRole?: 'none'
-    | 'button'
-    | 'togglebutton'
-    | 'link'
-    | 'search'
-    | 'image'
-    | 'keyboardkey'
-    | 'text'
-    | 'adjustable'
-    | 'imagebutton'
-    | 'header'
-    | 'summary'
-    | 'alert'
-    | 'checkbox'
-    | 'combobox'
-    | 'menu'
-    | 'menubar'
-    | 'menuitem'
-    | 'progressbar'
-    | 'radio'
-    | 'radiogroup'
-    | 'scrollbar'
-    | 'spinbutton'
-    | 'switch'
-    | 'tab'
-    | 'tabbar'
-    | 'tablist'
-    | 'timer'
-    | 'list'
-    | 'toolbar';
+     /**
+      * Accessibility hint for screen readers.
+      */
+     accessibilityHint?: string;
 
-    /**
-     * Function to execute on press.
-     */
-    onPress?: () => void;
+     /**
+      * Accessibility role of the button, defaults to "button".
+      */
+     accessibilityRole?: 'none'
+     | 'button'
+     | 'togglebutton'
+     | 'link'
+     | 'search'
+     | 'image'
+     | 'keyboardkey'
+     | 'text'
+     | 'adjustable'
+     | 'imagebutton'
+     | 'header'
+     | 'summary'
+     | 'alert'
+     | 'checkbox'
+     | 'combobox'
+     | 'menu'
+     | 'menubar'
+     | 'menuitem'
+     | 'progressbar'
+     | 'radio'
+     | 'radiogroup'
+     | 'scrollbar'
+     | 'spinbutton'
+     | 'switch'
+     | 'tab'
+     | 'tabbar'
+     | 'tablist'
+     | 'timer'
+     | 'list'
+     | 'toolbar';
 
-    /**
-     * Function to execute when the button is pressed in.
-     */
-    onPressIn?: () => void;
+     /**
+      * Function to execute on press.
+      */
+     onPress?: () => void;
 
-    /**
-     * Function to execute when the button is pressed out.
-     */
-    onPressOut?: () => void;
+     /**
+      * Function to execute when the button is pressed in.
+      */
+     onPressIn?: () => void;
 
-    /**
-     * Function to execute on long press.
-     */
-    onLongPress?: () => void;
+     /**
+      * Function to execute when the button is pressed out.
+      */
+     onPressOut?: () => void;
 
-    /**
-     * Delay for triggering the long press event, in milliseconds.
-     */
-    delayLongPress?: number;
+     /**
+      * Function to execute on long press.
+      */
+     onLongPress?: () => void;
 
-    /**
-     * Custom style for the button's inner content.
-     */
-    contentStyle?: object;
+     /**
+      * Delay for triggering the long press event, in milliseconds.
+      */
+     delayLongPress?: number;
 
-    /**
-     * Specifies the largest font size multiplier allowed.
-     */
-    maxFontSizeMultiplier?: number;
+     /**
+      * Custom style for the button's inner content.
+      */
+     contentStyle?: object;
 
-    /**
-     * Custom style for the button's container.
-     * @uxpincontroltype css
-     */
-    style?: object;
+     /**
+      * Specifies the largest font size multiplier allowed.
+      */
+     maxFontSizeMultiplier?: number;
 
-    /**
-     * Custom style for the button's text.
-     * @uxpincontroltype css
-     */
-    labelStyle?: object;
+     /**
+      * Custom style for the button's container.
+      * @uxpincontroltype css
+      */
+     style?: object;
 
-    /**
-     * Optional theme override for the button.
-     */
-    theme?: object;
+     /**
+      * Custom style for the button's text.
+      * @uxpincontroltype css
+      */
+     labelStyle?: object;
 
-    /**
-     * Ref for the button's touchable component.
-     */
-    touchableRef?: object;
+     /**
+      * Optional theme override for the button.
+      */
+     theme?: object;
 
-    /**
-     * Test ID used for end-to-end testing.
-     */
-    testID?: string;
+     /**
+      * Ref for the button's touchable component.
+      */
+     touchableRef?: object;
+
+     /**
+      * Test ID used for end-to-end testing.
+      */
+     testID?: string;
 }
 
 

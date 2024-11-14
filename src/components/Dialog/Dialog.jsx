@@ -4,7 +4,12 @@ import { Dialog as DialogM } from "react-native-paper";
 import * as React from "react";
 import Actions from "./Actions/Actions";
 import Content from "./Content/Content";
+import ScrollArea from "./ScrollArea/ScrollArea";
+import Title from "./Title/Title";
+import Icon from "./Icon/Icon";
 /**
+ * @uxpindocurl https://callstack.github.io/react-native-paper/docs/components/Dialog/
+ * @uxpindescription Dialogs inform users about a specific task and may contain critical information, require decisions, or involve multiple tasks
  * @uxpinuseportal
  */
 const Dialog = (props) => {
@@ -31,6 +36,10 @@ const Dialog = (props) => {
 
 Dialog.Actions = Actions;
 Dialog.Content = Content;
+Dialog.ScrollArea = ScrollArea;
+Dialog.Title = Title;
+Dialog.Icon = Icon;
+
 Dialog.propTypes = {
   children: PropTypes.node,
   /** Determines whether clicking outside the dialog dismiss it. */

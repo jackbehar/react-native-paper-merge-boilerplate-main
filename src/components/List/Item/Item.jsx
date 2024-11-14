@@ -5,6 +5,7 @@ import { List as ListM } from "react-native-paper";
 /**
  * @uxpindocurl https://callstack.github.io/react-native-paper/docs/components/List.Item
  * @uxpindescription A component to show tiles inside a List.
+ * @uxpinnamespace List
  *
  * ## Usage
  * ```js
@@ -25,11 +26,11 @@ import { List as ListM } from "react-native-paper";
  * @extends TouchableRipple props https://callstack.github.io/react-native-paper/docs/components/TouchableRipple
  */
 
-const ListItem = (props) => {
+const Item = (props) => {
   return <ListM.Item {...props} />;
 };
 
-ListItem.propTypes = {
+Item.propTypes = {
   /** Title text for the list item. */
   title: PropTypes.node,
   /** Description text for the list item or callback which returns a React element to display the description. */
@@ -80,4 +81,4 @@ See [`ellipsizeMode`](https://reactnative.dev/docs/text#ellipsizemode) */
   testID: PropTypes.string,
 };
 
-export default ListItem;
+export default Item;

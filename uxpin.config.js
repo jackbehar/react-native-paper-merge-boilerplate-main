@@ -37,8 +37,6 @@ module.exports = {
           "src/components/Card/Content/Content.tsx",
           "src/components/Card/Actions/Actions.tsx",
           "src/components/Card/Cover/Cover.tsx",
-          "src/components/ListItem/ListItem.jsx",
-          "src/components/ListAccordion/ListAccordion.jsx",
           "src/components/TextInput/TextInput.jsx",
           "src/components/ToggleButton/ToggleButton.jsx",
           "src/components/ToggleButton/Group/Group.jsx",
@@ -53,12 +51,18 @@ module.exports = {
           "src/components/Dialog/ScrollArea/ScrollArea.jsx",
           "src/components/Dialog/Title/Title.jsx",
           "src/components/Dialog/Icon/Icon.jsx",
+          "src/components/List/Item/Item.jsx",
+          "src/components/List/Accordion/Accordion.jsx",
+          "src/components/List/AccordionGroup/AccordionGroup.jsx",
         ],
       },
 
       {
         name: "Empty Namespaces",
-        include: ["src/components/Avatar/Avatar.jsx"],
+        include: [
+          "src/components/Avatar/Avatar.jsx",
+          "src/components/List/List.jsx",
+        ],
       },
       {
         name: "Utilities",

@@ -5,7 +5,7 @@ import { List as ListM } from "react-native-paper";
 /**
  * @uxpindocurl https://callstack.github.io/react-native-paper/docs/components/ListAccordion
  * @uxpindescription A component used to display an expandable list item.
- *
+ * @uxpinnamespace List
  * ## Usage
  * ```js
  * import * as React from 'react';
@@ -41,7 +41,7 @@ import { List as ListM } from "react-native-paper";
  * ```
  */
 
-const ListAccordion = (props) => {
+const Accordion = (props) => {
   return (
     <ListM.Accordion
       {...props}
@@ -51,7 +51,7 @@ const ListAccordion = (props) => {
   );
 };
 
-ListAccordion.propTypes = {
+Accordion.propTypes = {
   children: PropTypes.node,
   /** Title text for the list accordion. */
   title: PropTypes.node,
@@ -106,7 +106,7 @@ exceed this number. */
   /** Specifies the largest possible scale a description font can reach. */
   descriptionMaxFontSizeMultiplier: PropTypes.number,
   /** Id is used for distinguishing specific accordion when using ListAccordionGroup. Property is required when using ListAccordionGroup and has no impact on behavior when using standalone ListAccordion. */
-  id: PropTypes.oneOf([PropTypes.string, PropTypes.number]),
+  id: PropTypes.string,
   /** TestID used for testing purposes */
   testID: PropTypes.string,
   /** Accessibility label for the TouchableRipple. This is read by the screen reader when the user taps the touchable. */
@@ -115,11 +115,4 @@ exceed this number. */
   pointerEvents: PropTypes.object,
 };
 
-ListAccordion.defaultProps = {
-  children: undefined,
-  titleNumberOfLines: 1,
-  descriptionNumberOfLines: 2,
-  pointerEvents: "none",
-};
-
-export default ListAccordion;
+export default Accordion;

@@ -54,6 +54,10 @@ module.exports = {
           "src/components/List/Item/Item.jsx",
           "src/components/List/Accordion/Accordion.jsx",
           "src/components/List/AccordionGroup/AccordionGroup.jsx",
+          "src/components/List/Icon/Icon.jsx",
+          "src/components/List/Section/Section.jsx",
+          "src/components/List/Image/Image.jsx",
+          "src/components/List/Subheader/Subheader.jsx",
         ],
       },
 

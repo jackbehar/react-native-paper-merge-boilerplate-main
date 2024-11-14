@@ -1,10 +1,12 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { List.Subheader as List.SubheaderM } from 'react-native-paper';
+import React from "react";
+import PropTypes from "prop-types";
+import { List as ListM } from "react-native-paper";
 
 /**
 * @uxpindocurl https://callstack.github.io/react-native-paper/docs/components/List.Subheader
 * @uxpindescription A component used to display a header in lists.
+ * @uxpinnamespace List
+
 * 
 * ## Usage
 * ```js
@@ -17,14 +19,13 @@ import { List.Subheader as List.SubheaderM } from 'react-native-paper';
 * ```
 */
 
-
-const List.Subheader = (props) => {
-  return <List.SubheaderM {...props} />;
+const Subheader = (props) => {
+  return <ListM.Subheader {...props} />;
 };
 
-List.Subheader.propTypes = {
+Subheader.propTypes = {
   children: PropTypes.node,
-/** @optional */
+  /** @optional */
   theme: PropTypes.object,
   /** Style that is passed to Text element. */
   style: PropTypes.object,
@@ -32,9 +33,4 @@ List.Subheader.propTypes = {
   maxFontSizeMultiplier: PropTypes.number,
 };
 
-List.Subheader.defaultProps = {
-  children: undefined,
-
-};
-
-export default List.Subheader;
+export default Subheader;

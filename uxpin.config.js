@@ -58,6 +58,8 @@ module.exports = {
           "src/components/List/Section/Section.jsx",
           "src/components/List/Image/Image.jsx",
           "src/components/List/Subheader/Subheader.jsx",
+          "src/components/Menu/Menu.jsx", // Not opening
+          "src/components/Menu/Item/Item.jsx",
         ],
       },
 

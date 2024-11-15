@@ -56,7 +56,7 @@ Search layout mode, the default value is "bar". */
   /** Color of the ripple effect.
    * @uxpincontroltype color
    */
-  rippleColor: PropTypes.object,
+  rippleColor: PropTypes.string,
   /** Callback to execute if we want the left icon to act as button. */
   onIconPress: PropTypes.func,
   /** Callback to execute if we want to add custom behaviour to close icon button. */
@@ -89,7 +89,7 @@ Custom color for the right trailering icon, default will be derived from theme
 Color of the trailering icon ripple effect.
    * @uxpincontroltype color
 */
-  traileringRippleColor: PropTypes.object,
+  traileringRippleColor: PropTypes.string,
   /** @supported Available in v5.x with theme version 3
 Callback to execute on the right trailering icon button press. */
   onTraileringIconPress: PropTypes.func,
@@ -120,7 +120,5 @@ Changes Searchbar shadow and background on iOS and Android. */
   /** @optional */
   theme: PropTypes.object,
 };
-
-Searchbar.defaultProps = {};
 
 export default Searchbar;

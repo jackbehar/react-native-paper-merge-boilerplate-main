@@ -7,6 +7,7 @@ export default (
     action={{
       label: "Undo",
     }}
+    visible
   >
     Hey there! I'm a Snackbar.
   </Snackbar>

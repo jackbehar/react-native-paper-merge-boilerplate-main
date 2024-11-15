@@ -39,10 +39,4 @@ Badge.propTypes = {
   theme: PropTypes.object,
 };
 
-Badge.defaultProps = {
-  children: undefined,
-  visible: true,
-  size: 20,
-};
-
 export default Badge;

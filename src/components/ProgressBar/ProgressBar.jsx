@@ -52,11 +52,4 @@ Note: It should not be used in parallel with the `animatedValue` prop. */
   testID: PropTypes.string,
 };
 
-ProgressBar.defaultProps = {
-  children: undefined,
-  progress: 0,
-  visible: true,
-  testID: "progress-bar",
-};
-
 export default ProgressBar;

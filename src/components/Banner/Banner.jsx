@@ -98,12 +98,4 @@ Optional callback that will be called after the closing animation finished runni
   onHideAnimationFinished: PropTypes.func,
 };
 
-Banner.defaultProps = {
-  children: undefined,
-  actions: [],
-  elevation: 1,
-  onShowAnimationFinished: () => {},
-  onHideAnimationFinished: () => {},
-};
-
 export default Banner;

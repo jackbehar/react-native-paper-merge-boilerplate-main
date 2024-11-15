@@ -59,11 +59,4 @@ HelperText.propTypes = {
   testID: PropTypes.string,
 };
 
-HelperText.defaultProps = {
-  children: undefined,
-  type: "info",
-  visible: true,
-  padding: "normal",
-};
-
 export default HelperText;

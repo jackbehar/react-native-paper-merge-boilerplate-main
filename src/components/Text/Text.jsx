@@ -38,6 +38,4 @@ Text.propTypes = {
   theme: PropTypes.object,
 };
 
-Text.defaultProps = {};
-
 export default Text;

@@ -46,9 +46,4 @@ Whether divider has a left inset. */
   theme: PropTypes.object,
 };
 
-Divider.defaultProps = {
-  horizontalInset: false,
-  bold: false,
-};
-
 export default Divider;

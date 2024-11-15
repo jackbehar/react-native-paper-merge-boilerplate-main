@@ -44,9 +44,4 @@ Icon.propTypes = {
   theme: PropTypes.object,
 };
 
-Icon.defaultProps = {
-  source: "camera",
-  size: 20,
-};
-
 export default Icon;

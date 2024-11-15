@@ -79,13 +79,4 @@ Whether icon button is selected. A selected button receives alternative combinat
   loading: PropTypes.bool,
 };
 
-IconButton.defaultProps = {
-  children: undefined,
-  selected: false,
-  size: 24,
-  animated: false,
-  testID: "icon-button",
-  loading: false,
-};
-
 export default IconButton;

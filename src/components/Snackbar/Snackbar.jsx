@@ -104,11 +104,4 @@ Changes Snackbar shadow and background on iOS and Android. */
   testID: PropTypes.string,
 };
 
-Snackbar.defaultProps = {
-  children: undefined,
-  iconAccessibilityLabel: "Close icon",
-  duration: 7000,
-  elevation: 2,
-};
-
 export default Snackbar;

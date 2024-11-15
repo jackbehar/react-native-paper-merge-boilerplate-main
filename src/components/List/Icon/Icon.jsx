@@ -43,8 +43,4 @@ Icon.propTypes = {
   theme: PropTypes.object,
 };
 
-Icon.defaultProps = {
-  children: undefined,
-};
-
 export default Icon;

@@ -71,6 +71,4 @@ Use this prop to change the default wrapper style or to override safe area inset
   testID: PropTypes.string,
 };
 
-Modal.defaultProps = {};
-
 export default Modal;

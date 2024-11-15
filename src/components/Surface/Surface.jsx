@@ -65,11 +65,4 @@ Mode of the Surface.
   ref: PropTypes.object,
 };
 
-Surface.defaultProps = {
-  children: undefined,
-  elevation: 1,
-  mode: "elevated",
-  testID: "surface",
-};
-
 export default Surface;

@@ -43,11 +43,4 @@ ActivityIndicator.propTypes = {
   theme: PropTypes.object,
 };
 
-ActivityIndicator.defaultProps = {
-  children: undefined,
-  animating: true,
-  size: "small",
-  hidesWhenStopped: true,
-};
-
 export default ActivityIndicator;

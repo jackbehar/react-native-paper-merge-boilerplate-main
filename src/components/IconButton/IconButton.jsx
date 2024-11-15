@@ -42,12 +42,18 @@ IconButton.propTypes = {
 Mode of the icon button. By default there is no specified mode - only pressable icon will be rendered. */
   mode: PropTypes.oneOf(["outlined", "contained", "contained-tonal"]),
   /** @renamed Renamed from 'color' to 'iconColor' in v5.x
-Color of the icon. */
+Color of the icon.
+   * @uxpincontroltype color
+*/
   iconColor: PropTypes.string,
-  /** Background color of the icon container. */
+  /** Background color of the icon container.
+   * @uxpincontroltype color
+   */
   containerColor: PropTypes.string,
-  /** Color of the ripple effect. */
-  rippleColor: PropTypes.object,
+  /** Color of the ripple effect.
+   * @uxpincontroltype color
+   */
+  rippleColor: PropTypes.string,
   /** @supported Available in v5.x with theme version 3
 Whether icon button is selected. A selected button receives alternative combination of icon and container colors. */
   selected: PropTypes.bool,

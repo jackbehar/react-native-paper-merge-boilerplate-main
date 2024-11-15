@@ -50,7 +50,7 @@ https://reactnative.dev/docs/pressable#rippleconfig */
   /** Specifies the largest possible scale a label font can reach. */
   labelMaxFontSizeMultiplier: PropTypes.number,
   /** Color of the ripple effect. */
-  rippleColor: PropTypes.object,
+  rippleColor: PropTypes.string,
   
 /** @uxpincontroltype css */
 style: PropTypes.object,

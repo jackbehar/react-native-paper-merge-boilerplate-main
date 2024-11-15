@@ -75,7 +75,7 @@ https://reactnative.dev/docs/pressable#rippleconfig */
   /** Color of the ripple effect.
    * @uxpincontroltype color
    */
-  rippleColor: PropTypes.object,
+  rippleColor: PropTypes.string,
   /** @optional */
   theme: PropTypes.object,
   /** TestID used for testing purposes */

@@ -108,8 +108,10 @@ Uses `label` by default if specified. */
    * @uxpincontroltype color
    */
   color: PropTypes.string,
-  /** Color of the ripple effect. */
-  rippleColor: PropTypes.object,
+  /** Color of the ripple effect.
+   * @uxpincontroltype color
+   */
+  rippleColor: PropTypes.string,
   /** Whether `FAB` is disabled. A disabled button is greyed out and `onPress` is not called on touch. */
   disabled: PropTypes.bool,
   /** Whether `FAB` is currently visible. */

@@ -70,8 +70,10 @@ Icon to display when `onIconPress` is defined. Default will be `close` icon. */
     PropTypes.object,
   ]),
   /** @supported Available in v5.x with theme version 3
-Color of the ripple effect. */
-  rippleColor: PropTypes.object,
+Color of the ripple effect.
+   * @uxpincontroltype color
+*/
+  rippleColor: PropTypes.string,
   /** @supported Available in v5.x with theme version 3
 Function to execute on icon button press. The icon button appears only when this prop is specified. */
   onIconPress: PropTypes.func,

@@ -67,7 +67,9 @@ Chip.propTypes = {
   selected: PropTypes.bool,
   /** Whether to style the chip color as selected.
 Note: With theme version 3 `selectedColor` doesn't apply to the `icon`.
-      If you want specify custom color for the `icon`, render your own `Icon` component. */
+      If you want specify custom color for the `icon`, render your own `Icon` component.
+     * @uxpincontroltype color
+*/
   selectedColor: PropTypes.string,
   /** @supported Available in v5.x with theme version 3
 Whether to display overlay on selected chip */
@@ -75,8 +77,10 @@ Whether to display overlay on selected chip */
   /** Whether to display default check icon on selected chip.
 Note: Check will not be shown if `icon` is specified. If specified, `icon` will be shown regardless of `selected`. */
   showSelectedCheck: PropTypes.bool,
-  /** Color of the ripple effect. */
-  rippleColor: PropTypes.object,
+  /** Color of the ripple effect.
+   * @uxpincontroltype color
+   */
+  rippleColor: PropTypes.string,
   /** Whether the chip is disabled. A disabled chip is greyed out and `onPress` is not called on touch. */
   disabled: PropTypes.bool,
   /** Type of background drawabale to display the feedback (Android).

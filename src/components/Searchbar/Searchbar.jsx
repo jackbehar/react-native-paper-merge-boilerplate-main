@@ -49,9 +49,13 @@ Search layout mode, the default value is "bar". */
     PropTypes.object,
     PropTypes.object,
   ]),
-  /** Custom color for icon, default will be derived from theme */
+  /** Custom color for icon, default will be derived from theme
+   * @uxpincontroltype color
+   */
   iconColor: PropTypes.string,
-  /** Color of the ripple effect. */
+  /** Color of the ripple effect.
+   * @uxpincontroltype color
+   */
   rippleColor: PropTypes.object,
   /** Callback to execute if we want the left icon to act as button. */
   onIconPress: PropTypes.func,
@@ -77,10 +81,14 @@ Works only when `mode` is set to "bar". It won't be displayed if `loading` is se
     PropTypes.object,
   ]),
   /** @supported Available in v5.x with theme version 3
-Custom color for the right trailering icon, default will be derived from theme */
+Custom color for the right trailering icon, default will be derived from theme
+   * @uxpincontroltype color
+*/
   traileringIconColor: PropTypes.string,
   /** @supported Available in v5.x with theme version 3
-Color of the trailering icon ripple effect. */
+Color of the trailering icon ripple effect.
+   * @uxpincontroltype color
+*/
   traileringRippleColor: PropTypes.object,
   /** @supported Available in v5.x with theme version 3
 Callback to execute on the right trailering icon button press. */

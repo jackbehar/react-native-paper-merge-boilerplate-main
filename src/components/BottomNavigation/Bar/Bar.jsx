@@ -177,7 +177,9 @@ Uses `route.accessibilityLabel` by default. */
   getAccessibilityLabel: PropTypes.func,
   /** Get badge for the tab, uses `route.badge` by default. */
   getBadge: PropTypes.func,
-  /** Get color for the tab, uses `route.color` by default. */
+  /** Get color for the tab, uses `route.color` by default.
+   * @uxpincontroltype color
+   */
   getColor: PropTypes.func,
   /** Get label text for the tab, uses `route.title` by default. Use `renderLabel` to replace label component. */
   getLabelText: PropTypes.func,

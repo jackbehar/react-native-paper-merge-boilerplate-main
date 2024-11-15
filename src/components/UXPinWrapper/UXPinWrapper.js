@@ -80,8 +80,8 @@ export default function UXPinWrapper(props) {
   return (
     <ThemeContext.Provider value={[theme, setThemeOptions]}>
       <PaperProvider theme={{ ...themeOptions.theme }} {...props}>
-        <h1 style={{ fontFamily: "Abel" }}>Testing Abel font</h1>
-        <h1 style={{ fontFamily: "MaterialCommunityIcons" }}>Material font</h1>
+        {/* <h1 style={{ fontFamily: "Abel" }}>Testing Abel font</h1>
+        <h1 style={{ fontFamily: "MaterialCommunityIcons" }}>Material font</h1> */}
         {props.children}
       </PaperProvider>
     </ThemeContext.Provider>

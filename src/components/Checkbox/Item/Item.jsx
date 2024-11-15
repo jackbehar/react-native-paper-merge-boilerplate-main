@@ -120,6 +120,7 @@ Item.propTypes = {
 
   /**
    * Style that is passed to Label element.
+   * @uxpincontroltype css
    */
   labelStyle: PropTypes.object,
 

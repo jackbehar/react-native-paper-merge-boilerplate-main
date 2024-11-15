@@ -68,9 +68,13 @@ https://reactnative.dev/docs/pressable#rippleconfig */
 
   /** @uxpincontroltype css */
   style: PropTypes.object,
+  /** @uxpincontroltype css */
   contentStyle: PropTypes.object,
+  /**  @uxpincontroltype css */
   titleStyle: PropTypes.object,
-  /** Color of the ripple effect. */
+  /** Color of the ripple effect.
+   * @uxpincontroltype color
+   */
   rippleColor: PropTypes.object,
   /** @optional */
   theme: PropTypes.object,

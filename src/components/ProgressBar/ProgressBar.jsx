@@ -39,7 +39,9 @@ Note: It should not be used in parallel with the `animatedValue` prop. */
   indeterminate: PropTypes.bool,
   /** Whether to show the ProgressBar (true, the default) or hide it (false). */
   visible: PropTypes.bool,
-  /** Style of filled part of the ProgresBar. */
+  /** Style of filled part of the ProgresBar.
+   * @uxpincontroltype css
+   */
   fillStyle: PropTypes.object,
 
   /** @uxpincontroltype css */

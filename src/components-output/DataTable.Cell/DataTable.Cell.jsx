@@ -44,7 +44,9 @@ DataTable.Cell.propTypes = {
   
 /** @uxpincontroltype css */
 style: PropTypes.object,
-  /** Text content style of the `DataTableCell`. */
+  /** Text content style of the `DataTableCell`.
+   * @uxpincontroltype css
+  */
   textStyle: PropTypes.object,
   /** Specifies the largest possible scale a text font can reach. */
   maxFontSizeMultiplier: PropTypes.number,

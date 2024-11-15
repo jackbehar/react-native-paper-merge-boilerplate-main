@@ -156,6 +156,7 @@ export interface ButtonProps {
 
      /**
       * Custom style for the button's inner content.
+      * @uxpincontroltype css
       */
      contentStyle?: object;
 

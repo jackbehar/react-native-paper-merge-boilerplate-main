@@ -55,21 +55,35 @@ This component render TextInputOutlined or TextInputFlat based on that props */
   /** Callback that is called when the text input's text changes. Changed text is passed as an argument to the callback handler. */
   onChangeText: PropTypes.object,
   /** Selection color of the input. On iOS, it sets both the selection color and cursor color.
-On Android, it sets only the selection color. */
+On Android, it sets only the selection color.
+     * @uxpincontroltype color
+*/
   selectionColor: PropTypes.string,
   /** @platform Android only
 Cursor (or "caret") color of the input on Android.
-This property has no effect on iOS. */
+This property has no effect on iOS.
+     * @uxpincontroltype color
+*/
   cursorColor: PropTypes.string,
-  /** Inactive underline color of the input. */
+  /** Inactive underline color of the input.
+   * @uxpincontroltype color
+   */
   underlineColor: PropTypes.string,
-  /** Active underline color of the input. */
+  /** Active underline color of the input.
+   * @uxpincontroltype color
+   */
   activeUnderlineColor: PropTypes.string,
-  /** Inactive outline color of the input. */
+  /** Inactive outline color of the input.
+   * @uxpincontroltype color
+   */
   outlineColor: PropTypes.string,
-  /** Active outline color of the input. */
+  /** Active outline color of the input.
+   * @uxpincontroltype color
+   */
   activeOutlineColor: PropTypes.string,
-  /** Color of the text in the input. */
+  /** Color of the text in the input.
+   * @uxpincontroltype color
+   */
   textColor: PropTypes.string,
   /** Sets min height with densed layout. For `TextInput` in `flat` mode
 height is `64dp` or in dense layout - `52dp` with label or `40dp` without label.
@@ -120,15 +134,22 @@ This can be used to get MD Guidelines v1 TextInput look. */
   testID: PropTypes.string,
   /** Pass custom style directly to the input itself.
 Overrides input style
-Example: `paddingLeft`, `backgroundColor` */
+Example: `paddingLeft`, `backgroundColor`
+     * @uxpincontroltype css
+*/
   contentStyle: PropTypes.object,
   /** Pass style to override the default style of outlined wrapper.
 Overrides style when mode is set to `outlined`
-Example: `borderRadius`, `borderColor` */
+Example: `borderRadius`, `borderColor`
+     * @uxpincontroltype css
+*/
   outlineStyle: PropTypes.object,
   /** Pass style to override the default style of underlined wrapper.
 Overrides style when mode is set to `flat`
-Example: `borderRadius`, `borderColor` */
+Example: `borderRadius`, `borderColor`
+     * @uxpincontroltype css
+
+*/
   underlineStyle: PropTypes.object,
   editable: PropTypes.any,
 };

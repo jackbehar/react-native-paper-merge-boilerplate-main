@@ -36,7 +36,9 @@ Text.propTypes = {
 
   /** @uxpincontroltype css */
   style: PropTypes.object,
-  /** Style for the title. */
+  /** Style for the title.
+   * @uxpincontroltype css
+   */
   labelStyle: PropTypes.object,
   /** Specifies the largest possible scale a text font can reach. */
   maxFontSizeMultiplier: PropTypes.number,

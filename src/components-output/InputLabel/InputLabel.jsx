@@ -1,20 +1,18 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { InputLabel as InputLabelM } from 'react-native-paper';
+import React from "react";
+import PropTypes from "prop-types";
+import { InputLabel as InputLabelM } from "react-native-paper";
 
 /**
-* @uxpindocurl https://callstack.github.io/react-native-paper/docs/components/InputLabel
-* @uxpindescription 
-*/
-
-
+ * @uxpindocurl https://callstack.github.io/react-native-paper/docs/components/InputLabel
+ * @uxpindescription
+ */
 const InputLabel = (props) => {
   return <InputLabelM {...props} />;
 };
 
 InputLabel.propTypes = {
   children: PropTypes.node,
-labeled: PropTypes.object,
+  labeled: PropTypes.object,
   error: PropTypes.object,
   focused: PropTypes.bool,
   wiggle: PropTypes.bool,
@@ -24,12 +22,23 @@ labeled: PropTypes.object,
   labelLayoutHeight: PropTypes.number,
   inputContainerLayout: PropTypes.func,
   labelBackground: PropTypes.object,
-  maxFontSizeMultiplier: PropTypes.oneOf([PropTypes.number, PropTypes.object, PropTypes.object]),
+  maxFontSizeMultiplier: PropTypes.oneOf([
+    PropTypes.number,
+    PropTypes.object,
+    PropTypes.object,
+  ]),
   isV3: PropTypes.bool,
   scaledLabel: PropTypes.bool,
-  mode: PropTypes.oneOf(['flat', 'outlined']),
+  mode: PropTypes.oneOf(["flat", "outlined"]),
+  /**
+   * @uxpincontroltype css
+   */
   placeholderStyle: PropTypes.object,
-  placeholderOpacity: PropTypes.oneOf([PropTypes.number, PropTypes.object, PropTypes.object]),
+  placeholderOpacity: PropTypes.oneOf([
+    PropTypes.number,
+    PropTypes.object,
+    PropTypes.object,
+  ]),
   baseLabelTranslateX: PropTypes.number,
   baseLabelTranslateY: PropTypes.number,
   wiggleOffsetX: PropTypes.number,
@@ -44,7 +53,10 @@ labeled: PropTypes.object,
   labelTranslationXOffset: PropTypes.number,
   placeholderColor: PropTypes.oneOf([PropTypes.string, PropTypes.object]),
   backgroundColor: PropTypes.object,
-  label: PropTypes.oneOf([PropTypes.oneOf([PropTypes.string, PropTypes.object]), PropTypes.object]),
+  label: PropTypes.oneOf([
+    PropTypes.oneOf([PropTypes.string, PropTypes.object]),
+    PropTypes.object,
+  ]),
   hasActiveOutline: PropTypes.oneOf([PropTypes.bool, PropTypes.object]),
   activeColor: PropTypes.string,
   errorColor: PropTypes.string,
@@ -59,7 +71,6 @@ labeled: PropTypes.object,
 
 InputLabel.defaultProps = {
   children: undefined,
-
 };
 
 export default InputLabel;

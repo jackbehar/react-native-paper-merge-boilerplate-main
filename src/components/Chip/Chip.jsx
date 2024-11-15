@@ -104,7 +104,9 @@ Sets smaller horizontal paddings `12dp` around label, when there is only label. 
   /** @supported Available in v5.x with theme version 3
 Whether chip should have the elevation. */
   elevated: PropTypes.bool,
-  /** Style of chip's text */
+  /** Style of chip's text
+   * @uxpincontroltype css
+   */
   textStyle: PropTypes.object,
 
   /** @uxpincontroltype css */

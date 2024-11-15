@@ -58,7 +58,9 @@ Card.propTypes = {
   disabled: PropTypes.bool,
   /** Changes Card shadow and background on iOS and Android. */
   elevation: PropTypes.oneOf(["0", "1", "2", "3", "4", "5", PropTypes.object]),
-  /** Style of card's inner content. */
+  /** Style of card's inner content.
+   * @uxpincontroltype css
+   */
   contentStyle: PropTypes.object,
 
   /** @uxpincontroltype css */

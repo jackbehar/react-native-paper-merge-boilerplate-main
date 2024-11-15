@@ -88,7 +88,9 @@ Changes Snackbar shadow and background on iOS and Android. */
   elevation: PropTypes.oneOf(["0", "1", "2", "3", "4", "5", PropTypes.object]),
   /** Specifies the largest possible scale a text font can reach. */
   maxFontSizeMultiplier: PropTypes.number,
-  /** Style for the wrapper of the snackbar */
+  /** Style for the wrapper of the snackbar
+   * @uxpincontroltype css
+   */
   wrapperStyle: PropTypes.object,
 
   /** @uxpincontroltype css */

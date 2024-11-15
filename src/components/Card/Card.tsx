@@ -75,6 +75,7 @@ export interface CardProps {
 
     /**
      * Style of card's inner content.
+      * @uxpincontroltype css
      */
     contentStyle?: object; // Basic `object` type instead of `StyleProp<ViewStyle>`
 

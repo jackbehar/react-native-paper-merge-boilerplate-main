@@ -77,7 +77,9 @@ This is automatically handled on iOS. */
   /** Accessibility label for the overlay. This is read by the screen reader when the user taps outside the menu. */
   overlayAccessibilityLabel: PropTypes.string,
 
-  /** Style of menu's inner content. */
+  /** Style of menu's inner content.
+   * @uxpincontroltype css
+   */
   contentStyle: PropTypes.object,
 
   /** @uxpincontroltype css */

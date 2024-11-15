@@ -207,13 +207,16 @@ The bottom insets for iOS is added by default. You can override the behavior wit
 
 ```js
 barStyle={{ backgroundColor: '#694fad' }}
-``` */
+``` 
+* @uxpincontroltype css
+*/
   barStyle: PropTypes.object,
   /** Specifies the largest possible scale a label font can reach. */
   labelMaxFontSizeMultiplier: PropTypes.number,
 
   /** @uxpincontroltype css */
   style: PropTypes.object,
+  /** @uxpincontroltype css */
   activeIndicatorStyle: PropTypes.object,
   /** @optional */
   theme: PropTypes.object,

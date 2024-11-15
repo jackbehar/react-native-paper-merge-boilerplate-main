@@ -1,6 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { BottomNavigation as BottomNavigationM } from "react-native-paper";
+import {
+  BottomNavigation as BottomNavigationM,
+  IconButton,
+} from "react-native-paper";
 import Bar from "./Bar/Bar";
 
 /**
@@ -54,7 +57,22 @@ import Bar from "./Bar/Bar";
  */
 
 const BottomNavigation = (props) => {
-  return <BottomNavigationM {...props} />;
+  const [index, setIndex] = React.useState(props.navigationState.index);
+  const [routes, setRoutes] = React.useState(props.navigationState.routes);
+
+  // Update index and routes whenever navigationState prop changes
+  React.useEffect(() => {
+    setIndex(props.navigationState.index);
+    setRoutes(props.navigationState.routes);
+  }, [props.navigationState]);
+  return (
+    <BottomNavigationM
+      {...props}
+      navigationState={{ index, routes }}
+      onIndexChange={setIndex}
+      renderScene={() => undefined}
+    />
+  );
 };
 BottomNavigation.Bar = Bar;
 BottomNavigation.propTypes = {
@@ -162,9 +180,13 @@ Uses `route.accessibilityLabel` by default. */
   onTabPress: PropTypes.func,
   /** Function to execute on tab long press. It receives the route for the pressed tab, useful for things like custom action when longed pressed. */
   onTabLongPress: PropTypes.func,
-  /** Custom color for icon and label in the active tab. */
+  /** Custom color for icon and label in the active tab.
+   * @uxpincontroltype color
+   */
   activeColor: PropTypes.string,
-  /** Custom color for icon and label in the inactive tab. */
+  /** Custom color for icon and label in the inactive tab.
+   * @uxpincontroltype color
+   */
   inactiveColor: PropTypes.string,
   /** Whether animation is enabled for scenes transitions in `shifting` mode.
 By default, the scenes cross-fade during tab change when `shifting` is enabled.

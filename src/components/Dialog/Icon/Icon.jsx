@@ -50,6 +50,8 @@ Icon.propTypes = {
   icon: PropTypes.node,
   /** Optional icon size. */
   size: PropTypes.number,
+
+  /** @uxpincontroltype css */
   style: PropTypes.object,
   /** @optional */
   theme: PropTypes.object,

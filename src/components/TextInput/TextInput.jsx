@@ -111,6 +111,8 @@ Pass `height` prop to set `TextInput` height. When `height` is passed,
 `dense` prop will affect only input's `paddingVertical`.
 Pass `paddingHorizontal` to modify horizontal padding.
 This can be used to get MD Guidelines v1 TextInput look. */
+
+  /** @uxpincontroltype css */
   style: PropTypes.object,
   /** @optional */
   theme: PropTypes.object,

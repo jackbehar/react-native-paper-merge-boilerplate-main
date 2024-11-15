@@ -1,12 +1,11 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { DefaultRenderer as DefaultRendererM } from 'react-native-paper';
+import React from "react";
+import PropTypes from "prop-types";
+import { DefaultRenderer as DefaultRendererM } from "react-native-paper";
 
 /**
-* @uxpindocurl https://callstack.github.io/react-native-paper/docs/components/DefaultRenderer
-* @uxpindescription 
-*/
-
+ * @uxpindocurl https://callstack.github.io/react-native-paper/docs/components/DefaultRenderer
+ * @uxpindescription
+ */
 
 const DefaultRenderer = (props) => {
   return <DefaultRendererM {...props} />;
@@ -14,7 +13,7 @@ const DefaultRenderer = (props) => {
 
 DefaultRenderer.propTypes = {
   children: PropTypes.node,
-ref: PropTypes.func,
+  ref: PropTypes.func,
   onChangeText: PropTypes.func,
   placeholder: PropTypes.string,
   placeholderTextColor: PropTypes.object,
@@ -25,6 +24,8 @@ ref: PropTypes.func,
   onBlur: PropTypes.func,
   underlineColorAndroid: PropTypes.string,
   onLayout: PropTypes.func,
+
+  /** @uxpincontroltype css */
   style: PropTypes.object,
   multiline: PropTypes.bool,
   numberOfLines: PropTypes.number,
@@ -35,7 +36,6 @@ ref: PropTypes.func,
 
 DefaultRenderer.defaultProps = {
   children: undefined,
-
 };
 
 export default DefaultRenderer;

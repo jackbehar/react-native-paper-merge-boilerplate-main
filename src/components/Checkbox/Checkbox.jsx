@@ -29,6 +29,7 @@ Checkbox.Android = Android;
 Checkbox.IOS = IOS;
 
 Checkbox.propTypes = {
+  /** @uxpincontroltype css */
   style: PropTypes.object,
   /** Status of checkbox
    */
@@ -47,6 +48,8 @@ Checkbox.propTypes = {
    * @uxpincontroltype color
    */
   uncheckedColor: PropTypes.string,
+
+  /** @uxpincontroltype css */
   style: PropTypes.object,
   /** @optional */
   theme: PropTypes.object,

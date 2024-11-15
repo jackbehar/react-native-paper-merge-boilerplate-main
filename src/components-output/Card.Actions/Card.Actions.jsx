@@ -32,7 +32,9 @@ const Card.Actions = (props) => {
 Card.Actions.propTypes = {
   children: PropTypes.node,
 
-  style: PropTypes.object,
+  
+/** @uxpincontroltype css */
+style: PropTypes.object,
   theme: PropTypes.object,
 };
 

@@ -36,6 +36,8 @@ ActivityIndicator.propTypes = {
   size: PropTypes.oneOf(["small", "large", PropTypes.number]),
   /** Whether the indicator should hide when not animating. */
   hidesWhenStopped: PropTypes.bool,
+
+  /** @uxpincontroltype css */
   style: PropTypes.object,
   /** @optional */
   theme: PropTypes.object,

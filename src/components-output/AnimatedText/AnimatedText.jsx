@@ -1,14 +1,13 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { AnimatedText as AnimatedTextM } from 'react-native-paper';
+import React from "react";
+import PropTypes from "prop-types";
+import { AnimatedText as AnimatedTextM } from "react-native-paper";
 
 /**
-* @uxpindocurl https://callstack.github.io/react-native-paper/docs/components/AnimatedText
-* @uxpindescription Animated text component which follows styles from the theme.
-* 
-* @extends Text props https://reactnative.dev/docs/text#props
-*/
-
+ * @uxpindocurl https://callstack.github.io/react-native-paper/docs/components/AnimatedText
+ * @uxpindescription Animated text component which follows styles from the theme.
+ *
+ * @extends Text props https://reactnative.dev/docs/text#props
+ */
 
 const AnimatedText = (props) => {
   return <AnimatedTextM {...props} />;
@@ -16,7 +15,7 @@ const AnimatedText = (props) => {
 
 AnimatedText.propTypes = {
   children: PropTypes.node,
-/** Variant defines appropriate text styles for type role and its size.
+  /** Variant defines appropriate text styles for type role and its size.
 Available variants:
 
  Display: `displayLarge`, `displayMedium`, `displaySmall`
@@ -29,6 +28,8 @@ Available variants:
 
  Body: `bodyLarge`, `bodyMedium`, `bodySmall` */
   variant: PropTypes.oneOf([PropTypes.object, PropTypes.object]),
+
+  /** @uxpincontroltype css */
   style: PropTypes.object,
   /** @optional */
   theme: PropTypes.object,
@@ -36,7 +37,6 @@ Available variants:
 
 AnimatedText.defaultProps = {
   children: undefined,
-
 };
 
 export default AnimatedText;

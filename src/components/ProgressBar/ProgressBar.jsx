@@ -41,6 +41,8 @@ Note: It should not be used in parallel with the `animatedValue` prop. */
   visible: PropTypes.bool,
   /** Style of filled part of the ProgresBar. */
   fillStyle: PropTypes.object,
+
+  /** @uxpincontroltype css */
   style: PropTypes.object,
   /** @optional */
   theme: PropTypes.object,

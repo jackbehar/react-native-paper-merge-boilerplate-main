@@ -31,6 +31,8 @@ Image.propTypes = {
   /** @uxpincontroltype image */
   source: PropTypes.string,
   variant: PropTypes.oneOf(["image", "video"]),
+
+  /** @uxpincontroltype css */
   style: PropTypes.object,
   /** @optional */
   theme: PropTypes.object,

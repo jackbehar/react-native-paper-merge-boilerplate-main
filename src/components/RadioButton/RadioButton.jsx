@@ -48,6 +48,8 @@ RadioButton.propTypes = {
    * @uxpincontroltype color
    */
   uncheckedColor: PropTypes.string,
+
+  /** @uxpincontroltype css */
   style: PropTypes.object,
   /** @optional */
   theme: PropTypes.object,

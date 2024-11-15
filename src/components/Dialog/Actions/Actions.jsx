@@ -40,6 +40,7 @@ const Actions = (props) => {
 Actions.propTypes = {
   children: PropTypes.node,
 
+  /** @uxpincontroltype css */
   style: PropTypes.object,
   /** @optional */
   theme: PropTypes.object,

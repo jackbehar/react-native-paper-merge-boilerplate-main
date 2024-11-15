@@ -42,6 +42,8 @@ Section.propTypes = {
    * @uxpincontroltype css
    */
   titleStyle: PropTypes.object,
+
+  /** @uxpincontroltype css */
   style: PropTypes.object,
 };
 

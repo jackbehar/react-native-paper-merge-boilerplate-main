@@ -38,7 +38,9 @@ Card.Content.propTypes = {
   total: PropTypes.number,
   /** @internal */
   siblings: PropTypes.object,
-  style: PropTypes.object,
+  
+/** @uxpincontroltype css */
+style: PropTypes.object,
 };
 
 Card.Content.defaultProps = {

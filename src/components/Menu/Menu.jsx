@@ -79,6 +79,8 @@ This is automatically handled on iOS. */
 
   /** Style of menu's inner content. */
   contentStyle: PropTypes.object,
+
+  /** @uxpincontroltype css */
   style: PropTypes.object,
   /** Elevation level of the menu's content. Shadow styles are calculated based on this value. Default `backgroundColor` is taken from the corresponding `theme.colors.elevation` property. By default equals `2`.
 @supported Available in v5.x with theme version 3 */

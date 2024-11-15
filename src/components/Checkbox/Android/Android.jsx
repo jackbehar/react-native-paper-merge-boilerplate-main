@@ -55,6 +55,8 @@ Android.propTypes = {
    * Additional styles for container View.
    * @uxpincontroltype css
    */
+
+  /** @uxpincontroltype css */
   style: PropTypes.object,
   /**
    * Theme for the component.

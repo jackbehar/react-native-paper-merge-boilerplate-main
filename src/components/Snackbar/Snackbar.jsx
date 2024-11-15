@@ -90,6 +90,8 @@ Changes Snackbar shadow and background on iOS and Android. */
   maxFontSizeMultiplier: PropTypes.number,
   /** Style for the wrapper of the snackbar */
   wrapperStyle: PropTypes.object,
+
+  /** @uxpincontroltype css */
   style: PropTypes.object,
   ref: PropTypes.object,
   /** @optional */

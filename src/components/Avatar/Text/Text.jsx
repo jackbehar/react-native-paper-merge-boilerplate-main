@@ -33,6 +33,8 @@ Text.propTypes = {
    */
   color: PropTypes.string,
   /** Style for text container */
+
+  /** @uxpincontroltype css */
   style: PropTypes.object,
   /** Style for the title. */
   labelStyle: PropTypes.object,

@@ -36,6 +36,8 @@ Icon.propTypes = {
    * @uxpincontroltype color
    */
   color: PropTypes.string,
+
+  /** @uxpincontroltype css */
   style: PropTypes.object,
   /** @optional */
   theme: PropTypes.object,

@@ -44,6 +44,7 @@ Row.propTypes = {
    */
   onValueChange: PropTypes.func,
 
+  /** @uxpincontroltype css */
   style: PropTypes.object,
 };
 

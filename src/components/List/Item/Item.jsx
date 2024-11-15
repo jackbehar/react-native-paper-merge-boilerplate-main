@@ -46,6 +46,8 @@ Item.propTypes = {
   /** Style that is passed to the wrapping TouchableRipple element.
    *  @uxpincontroltype css
    */
+
+  /** @uxpincontroltype css */
   style: PropTypes.object,
   /** Style that is passed to the container wrapping title and descripton.
    * @uxpincontroltype css

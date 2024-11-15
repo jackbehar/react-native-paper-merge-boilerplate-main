@@ -201,6 +201,8 @@ The bottom insets for iOS is added by default. You can override the behavior wit
   safeAreaInsets: PropTypes.func,
   /** Specifies the largest possible scale a label font can reach. */
   labelMaxFontSizeMultiplier: PropTypes.number,
+
+  /** @uxpincontroltype css */
   style: PropTypes.object,
   activeIndicatorStyle: PropTypes.object,
   /** @optional */

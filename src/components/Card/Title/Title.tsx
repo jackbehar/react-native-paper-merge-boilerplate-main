@@ -18,6 +18,7 @@ export interface CardTitleProps {
 
     /**
      * Style for the title.
+     * @uxpincontroltype css
      */
     titleStyle?: object;
 
@@ -31,7 +32,22 @@ export interface CardTitleProps {
      * Title text variant defines appropriate text styles for type role and size.
      * @default 'bodyLarge'
      */
-    titleVariant?: string;
+    titleVariant?:
+    "displayLarge" |
+    "displayMedium" |
+    "displaySmall" |
+    "headlineLarge" |
+    "headlineMedium" |
+    "headlineSmall" |
+    "titleLarge" |
+    "titleMedium" |
+    "titleSmall" |
+    "labelLarge" |
+    "labelMedium" |
+    "labelSmall" |
+    "bodyLarge" |
+    "bodyMedium" |
+    "bodySmall";
 
     /**
      * Text for the subtitle. Accepts a string or a <Text>-based node.
@@ -40,6 +56,7 @@ export interface CardTitleProps {
 
     /**
      * Style for the subtitle.
+          * @uxpincontroltype css
      */
     subtitleStyle?: object;
 
@@ -53,7 +70,22 @@ export interface CardTitleProps {
      * Subtitle text variant defines appropriate text styles for type role and size.
      * @default 'bodyMedium'
      */
-    subtitleVariant?: string;
+    subtitleVariant?:
+    "displayLarge" |
+    "displayMedium" |
+    "displaySmall" |
+    "headlineLarge" |
+    "headlineMedium" |
+    "headlineSmall" |
+    "titleLarge" |
+    "titleMedium" |
+    "titleSmall" |
+    "labelLarge" |
+    "labelMedium" |
+    "labelSmall" |
+    "bodyLarge" |
+    "bodyMedium" |
+    "bodySmall";
 
     /**
      * Callback which returns a React element to display on the left side.
@@ -62,6 +94,7 @@ export interface CardTitleProps {
 
     /**
      * Style for the left element wrapper.
+     * @uxpincontroltype css
      */
     leftStyle?: object;
 
@@ -72,6 +105,7 @@ export interface CardTitleProps {
 
     /**
      * Style for the right element wrapper.
+    * @uxpincontroltype css
      */
     rightStyle?: object;
 
@@ -87,6 +121,7 @@ export interface CardTitleProps {
 
     /**
      * Style of the container component.
+     * @uxpincontroltype css
      */
     style?: object;
 

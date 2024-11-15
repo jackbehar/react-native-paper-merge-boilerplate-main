@@ -33,6 +33,8 @@ Or a function that returns an `Image`.
   source: PropTypes.string,
   /** Size of the avatar. */
   size: PropTypes.number,
+
+  /** @uxpincontroltype css */
   style: PropTypes.object,
   /** Invoked on load error. */
   onError: PropTypes.func,

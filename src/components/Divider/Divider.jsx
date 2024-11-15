@@ -39,6 +39,8 @@ Whether divider has a left inset. */
   /** @supported Available in v5.x with theme version 3
  Whether divider should be bolded. */
   bold: PropTypes.bool,
+
+  /** @uxpincontroltype css */
   style: PropTypes.object,
   /** @optional */
   theme: PropTypes.object,

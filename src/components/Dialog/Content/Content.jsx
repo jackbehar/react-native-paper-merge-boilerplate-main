@@ -39,6 +39,7 @@ const Content = (props) => {
 Content.propTypes = {
   children: PropTypes.node,
 
+  /** @uxpincontroltype css */
   style: PropTypes.object,
 };
 

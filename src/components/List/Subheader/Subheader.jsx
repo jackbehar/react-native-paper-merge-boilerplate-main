@@ -28,6 +28,8 @@ Subheader.propTypes = {
   /** @optional */
   theme: PropTypes.object,
   /** Style that is passed to Text element. */
+
+  /** @uxpincontroltype css */
   style: PropTypes.object,
   /** Specifies the largest possible scale a text font can reach. */
   maxFontSizeMultiplier: PropTypes.number,

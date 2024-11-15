@@ -51,7 +51,9 @@ https://reactnative.dev/docs/pressable#rippleconfig */
   labelMaxFontSizeMultiplier: PropTypes.number,
   /** Color of the ripple effect. */
   rippleColor: PropTypes.object,
-  style: PropTypes.object,
+  
+/** @uxpincontroltype css */
+style: PropTypes.object,
   /** @optional */
   theme: PropTypes.object,
 };

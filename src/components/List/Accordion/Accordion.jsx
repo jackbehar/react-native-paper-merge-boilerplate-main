@@ -82,6 +82,8 @@ https://reactnative.dev/docs/pressable#rippleconfig */
   /** Style that is passed to the wrapping TouchableRipple element.
    * @uxpincontroltype css
    */
+
+  /** @uxpincontroltype css */
   style: PropTypes.object,
   /** Style that is passed to Title element.
    *  @uxpincontroltype css

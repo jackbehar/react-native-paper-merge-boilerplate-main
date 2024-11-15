@@ -48,7 +48,9 @@ Drawer.Section.propTypes = {
   showDivider: PropTypes.bool,
   /** Specifies the largest possible scale a title font can reach. */
   titleMaxFontSizeMultiplier: PropTypes.number,
-  style: PropTypes.object,
+  
+/** @uxpincontroltype css */
+style: PropTypes.object,
   /** @optional */
   theme: PropTypes.object,
 };

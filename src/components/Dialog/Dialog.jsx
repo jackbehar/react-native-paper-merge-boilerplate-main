@@ -52,6 +52,7 @@ Dialog.propTypes = {
    */
   visible: PropTypes.bool,
 
+  /** @uxpincontroltype css */
   style: PropTypes.object,
   /** @optional */
   theme: PropTypes.object,

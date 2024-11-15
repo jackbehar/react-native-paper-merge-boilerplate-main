@@ -17,6 +17,7 @@ export interface CardActionsProps {
 
     /**
      * Style of the container component.
+    * @uxpincontroltype css
      */
     style?: object;
 

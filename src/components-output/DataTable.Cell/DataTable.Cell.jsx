@@ -41,7 +41,9 @@ DataTable.Cell.propTypes = {
   numeric: PropTypes.bool,
   /** Function to execute on press. */
   onPress: PropTypes.func,
-  style: PropTypes.object,
+  
+/** @uxpincontroltype css */
+style: PropTypes.object,
   /** Text content style of the `DataTableCell`. */
   textStyle: PropTypes.object,
   /** Specifies the largest possible scale a text font can reach. */

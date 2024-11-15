@@ -18,6 +18,7 @@ export interface CardCoverProps {
 
     /**
      * Style of the container component.
+    * @uxpincontroltype css
      */
     style?: object;
 

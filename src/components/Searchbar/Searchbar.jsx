@@ -100,6 +100,8 @@ Changes Searchbar shadow and background on iOS and Android. */
   elevation: PropTypes.oneOf(["0", "1", "2", "3", "4", "5", PropTypes.object]),
   /** Set style of the TextInput component inside the searchbar */
   inputStyle: PropTypes.object,
+
+  /** @uxpincontroltype css */
   style: PropTypes.object,
   /** Custom flag for replacing clear button with activity indicator. */
   loading: PropTypes.bool,

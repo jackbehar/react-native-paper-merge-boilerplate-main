@@ -80,6 +80,7 @@ export interface CardProps {
 
     /**
      * Style of the Card.
+    * @uxpincontroltype css
      */
     style?: object; // Basic `object` type instead of `StyleProp<ViewStyle>`
 

@@ -106,6 +106,8 @@ Whether chip should have the elevation. */
   elevated: PropTypes.bool,
   /** Style of chip's text */
   textStyle: PropTypes.object,
+
+  /** @uxpincontroltype css */
   style: PropTypes.object,
   /** @optional */
   theme: PropTypes.object,

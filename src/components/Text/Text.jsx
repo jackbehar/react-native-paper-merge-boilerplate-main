@@ -31,6 +31,8 @@ Text.propTypes = {
     "bodyMedium",
     "bodySmall",
   ]),
+
+  /** @uxpincontroltype css */
   style: PropTypes.object,
   /** @optional */
   theme: PropTypes.object,

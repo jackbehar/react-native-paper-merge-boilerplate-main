@@ -62,6 +62,8 @@ Modal.propTypes = {
   contentContainerStyle: PropTypes.object,
   /** Style for the wrapper of the modal.
 Use this prop to change the default wrapper style or to override safe area insets with marginTop and marginBottom. */
+
+  /** @uxpincontroltype css */
   style: PropTypes.object,
   /** @optional */
   theme: PropTypes.object,

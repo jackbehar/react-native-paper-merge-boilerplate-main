@@ -19,5 +19,7 @@ export interface CardContentProps {
     /**
      * Style of the container component.
      */
+    /** @uxpincontroltype css */
+
     style?: object;
 }

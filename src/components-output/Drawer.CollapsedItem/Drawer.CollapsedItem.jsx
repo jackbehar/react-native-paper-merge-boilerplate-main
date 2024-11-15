@@ -52,7 +52,9 @@ Icon to use as the unfocused destination icon, can be a string, an image source 
   labelMaxFontSizeMultiplier: PropTypes.number,
   /** Accessibility label for the button. This is read by the screen reader when the user taps the button. */
   accessibilityLabel: PropTypes.string,
-  style: PropTypes.object,
+  
+/** @uxpincontroltype css */
+style: PropTypes.object,
   /** @optional */
   theme: PropTypes.object,
   /** TestID used for testing purposes */

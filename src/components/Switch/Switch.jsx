@@ -41,6 +41,8 @@ Switch.propTypes = {
   color: PropTypes.string,
   /** Callback called with the new value when it changes. */
   onValueChange: PropTypes.func,
+
+  /** @uxpincontroltype css */
   style: PropTypes.object,
   /** @optional */
   theme: PropTypes.object,

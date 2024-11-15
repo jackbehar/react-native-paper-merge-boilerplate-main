@@ -84,6 +84,8 @@ Changes Banner shadow and background on iOS and Android. */
   /** Style of banner
    * @uxpincontroltype css
    */
+
+  /** @uxpincontroltype css */
   style: PropTypes.object,
   ref: PropTypes.object,
   /** @optional */

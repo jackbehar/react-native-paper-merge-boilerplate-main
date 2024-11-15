@@ -132,6 +132,8 @@ Uses `label` by default if specified. */
 
 Color mappings variant for combinations of container and icon colors. */
   variant: PropTypes.oneOf(["primary", "secondary", "tertiary", "surface"]),
+
+  /** @uxpincontroltype css */
   style: PropTypes.object,
   /** @optional */
   theme: PropTypes.object,

@@ -65,6 +65,8 @@ https://reactnative.dev/docs/pressable#rippleconfig */
   /** Specifies the largest possible scale a title font can reach. */
   titleMaxFontSizeMultiplier: PropTypes.number,
   /** @optional */
+
+  /** @uxpincontroltype css */
   style: PropTypes.object,
   contentStyle: PropTypes.object,
   titleStyle: PropTypes.object,

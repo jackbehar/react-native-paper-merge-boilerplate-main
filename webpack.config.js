@@ -53,6 +53,10 @@ module.exports = {
         },
       },
       {
+        test: /\.css$/, // Process CSS files
+        use: ["style-loader", "css-loader"], // Inject styles into DOM
+      },
+      {
         test: /\.(png|jpe?g|gif|svg)$/i,
         use: [
           {
@@ -62,6 +66,19 @@ module.exports = {
             },
           },
         ],
+      },
+      {
+        test: /\.ttf$/,
+        include: path.resolve(
+          __dirname,
+          "node_modules/react-native-vector-icons"
+        ),
+        use: {
+          loader: "file-loader",
+          options: {
+            name: "fonts/[name].[ext]",
+          },
+        },
       },
     ],
   },

@@ -5,9 +5,13 @@ module.exports = {
     publicPath: "",
   },
   resolve: {
-    extensions: [".ts", ".tsx", ".js", ".jsx"],
+    extensions: [".web.js", ".ts", ".tsx", ".js", ".jsx"],
     alias: {
       "react-native$": require.resolve("react-native-web"),
+      "react-native-vector-icons/Fonts": path.resolve(
+        __dirname,
+        "node_modules/react-native-vector-icons/Fonts"
+      ),
       "react-native-vector-icons": "react-native-vector-icons/dist",
       "../Utilities/Platform": "react-native-web/dist/exports/Platform",
       "../../Utilities/Platform": "react-native-web/dist/exports/Platform",
@@ -74,10 +78,7 @@ module.exports = {
           "node_modules/react-native-vector-icons"
         ),
         use: {
-          loader: "file-loader",
-          options: {
-            name: "fonts/[name].[ext]",
-          },
+          loader: "url-loader",
         },
       },
     ],

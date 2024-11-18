@@ -1,6 +1,6 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { Avatar as AvatarM } from "react-native-paper";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Avatar as AvatarM } from 'react-native-paper';
 
 /**
  * @uxpindocurl https://callstack.github.io/react-native-paper/docs/components/Avatar.Icon
@@ -25,11 +25,7 @@ const Icon = (props) => {
 Icon.propTypes = {
   children: PropTypes.node,
   /** Icon to display for the `Avatar`. */
-  icon: PropTypes.oneOf([
-    PropTypes.oneOf([PropTypes.string, PropTypes.object]),
-    PropTypes.object,
-    PropTypes.object,
-  ]),
+  icon: PropTypes.string,
   /** Size of the avatar. */
   size: PropTypes.number,
   /** Custom color for the icon.

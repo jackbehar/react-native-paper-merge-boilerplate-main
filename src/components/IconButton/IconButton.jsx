@@ -1,6 +1,6 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { IconButton as IconButtonM } from "react-native-paper";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { IconButton as IconButtonM } from 'react-native-paper';
 
 /**
  * @uxpindocurl https://callstack.github.io/react-native-paper/docs/components/IconButton
@@ -31,16 +31,11 @@ const IconButton = (props) => {
 };
 
 IconButton.propTypes = {
-  children: PropTypes.node,
   /** Icon to display. */
-  icon: PropTypes.oneOf([
-    PropTypes.oneOf([PropTypes.string, PropTypes.object]),
-    PropTypes.object,
-    PropTypes.object,
-  ]),
+  icon: PropTypes.string,
   /** @supported Available in v5.x with theme version 3
 Mode of the icon button. By default there is no specified mode - only pressable icon will be rendered. */
-  mode: PropTypes.oneOf(["outlined", "contained", "contained-tonal"]),
+  mode: PropTypes.oneOf(['outlined', 'contained', 'contained-tonal']),
   /** @renamed Renamed from 'color' to 'iconColor' in v5.x
 Color of the icon.
    * @uxpincontroltype color

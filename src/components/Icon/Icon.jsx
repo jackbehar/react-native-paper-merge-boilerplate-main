@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Icon as IconM } from 'react-native-paper';
+// import iconVariants from './icon-variants';
 
 // Generate the required CSS
 import iconFont from 'react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf';
@@ -6647,6 +6648,7 @@ const iconList = [
 ];
 
 Icon.propTypes = {
+  children: PropTypes.node,
   /** Size of icon. */
   size: PropTypes.number,
   allowFontScaling: PropTypes.bool,

@@ -29,6 +29,10 @@ module.exports = {
           'src/components/Dialog/ScrollArea/ScrollArea.jsx',
           'src/components/Dialog/Title/Title.jsx',
           'src/components/Divider/Divider.jsx',
+          // 'src/components/Drawer/Drawer.jsx',
+          'src/components/Drawer/CollapsedItem/CollapsedItem.jsx',
+          'src/components/Drawer/Item/Item.jsx',
+          'src/components/Drawer/Section/Section.jsx',
           'src/components/HelperText/HelperText.jsx',
           'src/components/Icon/Icon.jsx',
           'src/components/IconButton/IconButton.jsx',
@@ -71,6 +75,7 @@ module.exports = {
         include: [
           'src/components/Avatar/Avatar.jsx',
           'src/components/List/List.jsx',
+          'src/components/Drawer/Drawer.jsx',
         ],
       },
     ],

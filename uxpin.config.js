@@ -25,6 +25,7 @@ module.exports = {
           'src/components/DataTable/DataTable.jsx',
           'src/components/DataTable/Cell/Cell.jsx',
           'src/components/DataTable/Header/Header.jsx',
+          'src/components/DataTable/Pagination/Pagination.jsx',
           'src/components/DataTable/Row/Row.jsx',
           'src/components/DataTable/Title/Title.jsx',
           'src/components/Dialog/Actions/Actions.jsx',

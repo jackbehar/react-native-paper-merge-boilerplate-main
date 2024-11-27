@@ -5,6 +5,7 @@ import Header from './Header/Header';
 import Title from './Title/Title';
 import Row from './Row/Row';
 import Cell from './Cell/Cell';
+import Pagination from './Pagination/Pagination';
 
 /**
  * @uxpindocurl https://callstack.github.io/react-native-paper/docs/components/Drawer/DrawerCollapsedItem/
@@ -19,6 +20,7 @@ DataTable.Header = Header;
 DataTable.Title = Title;
 DataTable.Row = Row;
 DataTable.Cell = Cell;
+DataTable.Pagination = Pagination;
 
 DataTable.propTypes = {
   children: PropTypes.node,

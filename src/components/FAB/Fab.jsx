@@ -8,13 +8,13 @@ import Group from './Group/Group';
  * @uxpindescription A floating action button represents the primary action on a screen. It appears in front of all screen content.
  */
 
-const Fab = (props) => {
+const FAB = (props) => {
   return <FabM {...props} />;
 };
 
-Fab.Group = Group;
+FAB.Group = Group;
 
-Fab.propTypes = {
+FAB.propTypes = {
   /**
    * Icon to display for the FAB. Optional if `label` is defined.
    */
@@ -150,4 +150,4 @@ Fab.propTypes = {
   ref: PropTypes.shape({ current: PropTypes.any }),
 };
 
-export default Fab;
+export default FAB;

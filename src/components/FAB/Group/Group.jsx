@@ -5,7 +5,7 @@ import { FAB as FabM, Portal } from 'react-native-paper';
 /**
  * @uxpindocurl https://callstack.github.io/react-native-paper/docs/components/FAB/FABGroup
  * @uxpindescription A component to display a stack of FABs with related actions in a speed dial.
- * @uxpinnamespace Fab
+ * @uxpinnamespace FAB
  */
 
 const Group = ({ children, closedIcon, uxpinRef, ...props }) => {

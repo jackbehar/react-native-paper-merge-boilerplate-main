@@ -1,4 +1,4 @@
 import React from 'react';
-import Fab from '../Fab';
+import FAB from '../FAB';
 
-export default <Fab icon='plus' uxpId='fab-1' />;
+export default <FAB icon='plus' uxpId='fab-1' />;

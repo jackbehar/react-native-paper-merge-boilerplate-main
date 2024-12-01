@@ -39,6 +39,8 @@ module.exports = {
           'src/components/Drawer/CollapsedItem/CollapsedItem.jsx',
           'src/components/Drawer/Item/Item.jsx',
           'src/components/Drawer/Section/Section.jsx',
+          'src/components/Fab/Fab.jsx',
+          'src/components/Fab/Group/Group.jsx',
           'src/components/HelperText/HelperText.jsx',
           'src/components/Icon/Icon.jsx',
           'src/components/IconButton/IconButton.jsx',

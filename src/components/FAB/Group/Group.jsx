@@ -28,11 +28,7 @@ const Group = ({ children, closedIcon, uxpinRef, ...props }) => {
   }));
 
   return (
-    <div
-      className='jackcss'
-      style={{ width: '88px', height: '88px' }}
-      ref={uxpinRef}
-    >
+    <div style={{ width: '88px', height: '88px' }} ref={uxpinRef}>
       {/* <Portal> */}
       <FabM.Group
         {...props}
